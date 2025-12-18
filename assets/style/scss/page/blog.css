@@ -237,11 +237,11 @@ body {
 }
 
 .text-yellow-600 {
-  color: #F8D315;
+  color: #ffb400;
 }
 
 .bg-yellow-600 {
-  background-color: #F8D315;
+  background-color: #ffb400;
 }
 
 @media (min-width: 1200px) {
@@ -548,19 +548,81 @@ body {
   color: #fff;
 }
 
-.about-content .about-content__text .about-content__title {
-  font-size: 32px;
-  font-weight: 700;
+.about-content .about-title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #dee3e4;
+  z-index: 11;
+  padding: 16px 0;
+}
+.about-content .about-title h2 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #272626;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
 }
-.about-content .about-content__text .about-description--wrapper {
+.about-content .about-title h2 span {
+  color: #ffb400;
+}
+.about-content .about-title .title-bg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 110px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  text-transform: uppercase;
+  color: #dee3e4;
+  opacity: 0.35;
+  z-index: -1;
+  pointer-events: none;
+}
+.about-content .about-tab-bottom .nav-link {
+  background: transparent;
+  border: none;
+  color: #1E1F24;
+  position: relative;
+  font-size: 18px;
+}
+.about-content .about-tab-bottom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #DEE2E6;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.about-content .about-tab-bottom .nav-link.active {
+  color: #4EABBE;
+}
+.about-content .about-tab-bottom .nav-link.active::after {
+  width: 100%;
+  background-color: #ffb400;
+}
+.about-content .about-tab-content .about-content__text .about-content__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.about-content .about-tab-content .about-content__text .about-description--wrapper {
   margin-bottom: 20px;
   max-height: none;
   overflow: hidden;
   -webkit-transition: height 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
   transition: height 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
 }
-.about-content .about-content__text .about-description--wrapper .text-content {
+.about-content .about-tab-content .about-content__text .about-description--wrapper .text-content {
   font-size: 16px;
   font-weight: 400;
   color: #343A40;
@@ -569,7 +631,7 @@ body {
   line-height: 1.6;
   margin-bottom: 0;
 }
-.about-content .about-content__text .toggle--btn {
+.about-content .about-tab-content .about-content__text .toggle--btn {
   width: 100%;
   padding: 0 10px;
   margin-bottom: 16px;
@@ -593,7 +655,7 @@ body {
   transition: all 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
   font-weight: 500;
 }
-.about-content .about-content__text .toggle--btn::before {
+.about-content .about-tab-content .about-content__text .toggle--btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -604,12 +666,45 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgb(255, 255, 255)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
 }
-.about-content .about-content__text .toggle--btn .icon-wrapper {
+.about-content .about-tab-content .about-content__text .toggle--btn .icon-wrapper {
   font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #ffb400;
+}
+.about-content .about-tab-content .personal-info_wrapper .personal-info__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1E1F24;
+}
+.about-content .about-tab-content .personal-info_wrapper .info-list-wrapper {
+  font-family: sans-serif;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.about-content .about-tab-content .personal-info_wrapper .info-list-wrapper .list-info {
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #343A40;
+}
+.about-content .about-tab-content .personal-info_wrapper .info-list-wrapper .list-info .info-title {
+  text-transform: capitalize;
+  opacity: 0.8;
+  font-weight: 500;
+}
+.about-content .about-tab-content .personal-info_wrapper .info-list-wrapper .list-info .info-con {
+  font-weight: 600;
+  display: block;
 }
 .about-content .about-content__image-wrapper {
   width: 100%;

@@ -23,7 +23,8 @@
       <div class="container-fluid g-lg-4">
         <div class="col-auto col-lg-2">
           <!-- Logo -->
-          <a class="logo-link" href="index.html" title="Simone"> <img src="./assets/images/logo-light.png" alt="Simone"> </a>
+          <a class="logo-link" href="index.html" title="Simone"> <img src="./assets/images/logo-light.png" alt="Simone">
+          </a>
           <!-- Logo End -->
         </div>
         <div class="col col-lg-8 navbar-accordion">
@@ -223,28 +224,115 @@
   <!-- About section start -->
   <div class="about-content">
     <div class="container section-padding">
-      <div class="row ">
+      <!-- contact Title Start -->
+      <div class="about-title">
+        <h2>
+          About
+          <span>Me</span>
+        </h2>
+        <span class="title-bg">Overview</span>
+      </div>
+      <!-- contact Title End -->
+      <div class="row" style="margin-top: 3rem;">
         <div class="col-lg-7 mb-3 mb-lg-0">
-          <div class="about-content__text">
-            <h1 class="about-content__title mb-16">About Me</h1>
-            <div class="about-description--wrapper">
-              <p class="text-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae suscipit, adipisci quasi
-                officia praesentium mollitia quisquam esse quo excepturi distinctio! A ad optio eius possimus
-                perferendis laborum atque fuga ipsam qui, veritatis quos ab rem voluptate, corporis illo dicta esse
-                dolor. Velit quisquam facere autem porro adipisci aut, architecto sint voluptas exercitationem officiis
-                culpa reprehenderit pariatur! Itaque laboriosam molestias dolore magni consectetur deleniti aut
-                consequuntur, sed magnam nam rerum. Earum quibusdam maxime beatae natus recusandae ullam quo ab. Eaque
-                modi officiis perspiciatis fugit cumque dolor ipsa dolores ducimus at rem porro nihil, libero, harum
-                voluptas? Reiciendis dolores accusamus suscipit!
-              </p>
+          <ul class="nav nav-pills about-tab-bottom mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-summary"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Summary</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-PersonalProfile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Personal Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+            </li>
+          </ul>
+          <div class="tab-content about-tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-summary" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="about-content__text">
+                <h1 class="about-content__title">Introduction</h1>
+                <div class="about-description--wrapper">
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae suscipit, adipisci
+                    quasi
+                    officia praesentium mollitia quisquam esse quo excepturi distinctio! A ad optio eius possimus
+                    perferendis laborum atque fuga ipsam qui, veritatis quos ab rem voluptate, corporis illo dicta esse
+                    dolor. Velit quisquam facere autem porro adipisci aut, architecto sint voluptas exercitationem
+                    officiis
+                    culpa reprehenderit pariatur! Itaque laboriosam molestias dolore magni consectetur deleniti aut
+                    consequuntur, sed magnam nam rerum. Earum quibusdam maxime beatae natus recusandae ullam quo ab.
+                    Eaque
+                    modi officiis perspiciatis fugit cumque dolor ipsa dolores ducimus at rem porro nihil, libero, harum
+                    voluptas? Reiciendis dolores accusamus suscipit!
+                  </p>
 
+                </div>
+                <button class="toggle--btn">Read more <span class="icon-wrapper">
+                    <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
+                  </span>
+                </button>
+              </div>
             </div>
-            <button class="toggle--btn">Read more <span class="icon-wrapper">
-                <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
-              </span>
-            </button>
+            <div class="tab-pane fade" id="pills-PersonalProfile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="personal-info_wrapper">
+                <h1 class="personal-info__title">Personal Info</h1>
+                <div class="row p-0">
+                  <div class="col-4">
+                    <ul class="info-list-wrapper">
+                      <li class="list-info">
+                        <span class="info-title">First Name :</span>
+                        <span class="info-con">Sanjiv</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Last Name :</span>
+                        <span class="info-con">Thakur</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Age :</span>
+                        <span class="info-con">27</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Nationality :</span>
+                        <span class="info-con">Nepali</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Religion :</span>
+                        <span class="info-con">Hindu</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-8">
+                    <ul class="info-list-wrapper">
+                      <li class="list-info">
+                        <span class="info-title">Address :</span>
+                        <span class="info-con">Imadol, Lalitpur, Nepal</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Phone :</span>
+                        <span class="info-con">+977 9864215460</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Email :</span>
+                        <span class="info-con">thakursanjivkumar37@gmail.com</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Linkedin :</span>
+                        <span class="info-con">www.linkedin.com/in/sanjivthakur5533</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Language :</span>
+                        <span class="info-con">English, Nepali, Maitheli, Hindi</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
           </div>
+
         </div>
         <div class="col-lg-5 ps-lg-5">
           <div class="about-content__image-wrapper">
@@ -326,13 +414,14 @@
                 <input name="Email" type="email" class="form-control" required placeholder="Email">
               </div>
               <div class="col-12">
-                <textarea name="form-message" id="#" class="form-control" rows="5" required placeholder="Tell us more about your needs....."></textarea>
+                <textarea name="form-message" id="#" class="form-control" rows="5" required
+                  placeholder="Tell us more about your needs....."></textarea>
               </div>
             </div>
-              <button type="button" class="send-btn">
-                <span class="btn-text">Send Message</span>
-                <span class="btn-icon"></span>
-              </button>
+            <button type="button" class="send-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon"></span>
+            </button>
           </form>
           <!-- form section end -->
         </div>

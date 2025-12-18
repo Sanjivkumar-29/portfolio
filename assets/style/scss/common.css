@@ -237,11 +237,11 @@ body {
 }
 
 .text-yellow-600 {
-  color: #F8D315;
+  color: #ffb400;
 }
 
 .bg-yellow-600 {
-  background-color: #F8D315;
+  background-color: #ffb400;
 }
 
 @media (min-width: 1200px) {
