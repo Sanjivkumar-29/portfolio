@@ -26,6 +26,7 @@
 
       img {
         max-height: 45px;
+        max-width: 160px;
         object-fit: cover;
         object-position: center;
         background-repeat: no-repeat;
@@ -512,7 +513,8 @@
       color: #1E1F24;
       margin-bottom: 22px;
     }
-    .background-container{
+
+    .background-container {
       background-color: white;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
@@ -520,7 +522,7 @@
       border: 1px solid $black-400;
       border-radius: 12px;
 
-      .date-badge{
+      .date-badge {
         display: inline-block;
         line-height: 1;
         text-align: center;
@@ -536,7 +538,8 @@
         margin-top: 0;
         margin-bottom: 1rem;
       }
-      .box-title{
+
+      .box-title {
         font-size: 22px;
         font-weight: 500;
         color: $black-800;
@@ -545,7 +548,8 @@
         line-height: 1.2;
 
       }
-      .box-sub-title{
+
+      .box-sub-title {
         display: inline-block;
         line-height: 1.8;
         margin-top: 0;
@@ -553,7 +557,8 @@
         color: $yellow-600;
         font-size: 16px;
       }
-      .box-description{
+
+      .box-description {
         margin: o;
         line-height: 1.8;
         color: $black-500;
@@ -569,3 +574,96 @@
 }
 
 // Resume section End
+
+// fotter section start
+.footer__section-wrapper {
+  padding-top: 80px;
+  margin: 0;
+
+  .footer__section-top {
+    padding: 1rem 0;
+    background-color: $black-500;
+
+    .top-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer-image img {
+        max-width: 160px;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .footer-social-link {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+
+        .follow-me {
+          font-size: 1rem;
+          font-weight: 500;
+          color: $white;
+          letter-spacing: 0.5px;
+          margin: 0;
+          padding: 0;
+        }
+
+        .social-media {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+
+          .social-media_list {
+            display: flex;
+
+            .social-media_link {
+              width: 42px;
+              height: 42px;
+              background: #272626;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-decoration: none;
+              transition: 0.3s ease;
+
+
+              .media-icon {
+                font-size: 1.2em;
+                color: white;
+                transition: 0.3s ease;
+              }
+
+              :hover .media-icon {
+                color: #fff;
+              }
+
+            }
+
+            :hover {
+              background: #ffb400;
+              transform: translateY(-3px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer__section-bottom {
+    background-color: #111;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 1.2rem 0;
+  }
+
+}
+
+// footer section end
