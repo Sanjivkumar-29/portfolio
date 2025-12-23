@@ -24,3 +24,35 @@ $(document).ready(function() {
         });
     }
 });
+
+
+
+
+  const filterTabs = document.querySelectorAll(".filter li");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+      // active tab
+      filterTabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      const filterValue = tab.getAttribute("data-filter");
+
+      portfolioItems.forEach(item => {
+        if (filterValue === "*") {
+          item.style.display = "block";
+        } else {
+          item.classList.contains(filterValue.replace(".", ""))
+            ? item.style.display = "block"
+            : item.style.display = "none";
+        }
+      });
+
+    });
+  });
+
+
+
+

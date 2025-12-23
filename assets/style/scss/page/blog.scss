@@ -756,6 +756,7 @@
 
         .service-text {
           padding-top: 24px;
+
           .intro {
             text-align: center;
             font-size: 14px;
@@ -809,6 +810,170 @@
 }
 
 // Service section end
+
+// Project section start
+.project-section__wrapper {
+  .Project--title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dee3e4;
+    z-index: 11;
+    padding: 16px 0;
+
+    h2 {
+      font-size: 56px;
+      font-weight: 900;
+      color: #272626;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+
+      span {
+        color: #ffb400;
+      }
+    }
+
+    .title-bg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      font-size: 110px;
+      font-weight: 800;
+      letter-spacing: 10px;
+      line-height: 0.7;
+      text-transform: uppercase;
+      color: #dee3e4;
+      opacity: 0.35;
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+
+  .content-title {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 24px;
+
+    .service-content {
+      font-size: 16px;
+      font-weight: 400;
+      color: #111;
+      line-height: 1.2;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .portfolio-filter__wrapper {
+    padding-top: 32px;
+
+    /* FILTER TABS */
+    .portfolio-filter {
+      margin-bottom: 30px;
+
+      .filter {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          margin: 0 10px;
+          padding: 10px 22px;
+          font-size: 13px;
+          font-weight: 500;
+          text-transform: uppercase;
+          cursor: pointer;
+          background: #fff;
+          border-radius: 30px;
+          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);
+          transition: all 0.3s ease;
+
+          &:hover,
+          &.active {
+            color: #fff;
+            background: linear-gradient(to right, #4EABBE, #5899AE);
+          }
+        }
+      }
+    }
+
+    .portfolio-cols {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .portfolio-item {
+       display: block;
+    }
+
+    /* CARD DESIGN */
+    .portfolio-wrapper {
+      width: 100%;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+
+       .pic-link {
+          width: 100%;
+          height: 280px;
+          cursor: pointer;
+          text-decoration: none;
+          display: block;
+          border-radius: 16px 16px 0 0;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%; // ✅ FORCE IMAGE TO FILL
+            object-fit: cover; // ✅ MAINTAIN ASPECT RATIO
+            object-position: center;
+            display: block;
+          }
+        }
+
+      .portfolio-info {
+        padding: 18px;
+        text-align: center;
+
+        h5 {
+          margin: 0 0 6px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.5;
+          color: #111;
+        }
+
+        span {
+          font-size: 13px;
+          color: $black-500;
+          font-weight: 400;
+          line-height: 1.2;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+// project section end
 
 // fotter section start
 .footer__section-wrapper {
@@ -902,43 +1067,3 @@
 }
 
 // footer section end
-
-
-.service-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-}
-
-
-
-.service-text h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-.service-text .intro {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 25px;
-}
-
-.service-text h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #111;
-}
-
-.service-text ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-.service-text ul li {
-  margin-bottom: 10px;
-  color: #444;
-  font-size: 15px;
-}
