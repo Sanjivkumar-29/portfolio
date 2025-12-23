@@ -1,0 +1,3 @@
+# Normalize line endings for CSS and SCSS files
+*.css text eol=lf
+*.scss text eol=lf
