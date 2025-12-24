@@ -70,7 +70,7 @@
             font-size: 16px;
             font-weight: 500;
             color: #fff;
-            background: #ffb400;
+            background: #38BDF8;
             padding: 8px 16px;
             border: none;
             border-radius: 8px;
@@ -80,7 +80,7 @@
             transition: all 0.3s ease;
 
             &:hover {
-                background: #e09d00;
+                background: #2563EB;
                 transform: translateY(-2px);
                 box-shadow: 0 2px 8px rgba(255, 180, 0, 0.4);
             }
@@ -119,6 +119,8 @@
     }
 }
 
+
+
 // Banner Section start
 .banner-section__wrapper {
     margin: 0;
@@ -130,25 +132,32 @@
         overflow: hidden;
         display: flex;
         align-items: center;
-        background: #0f172a;
-        color: #fff;
+        background: $black-600;
+        color: $white;
 
         /* 3D Wave Background */
         .hero-bg {
-            position: absolute;
+            position: absolute; // ensure it covers hero section
             inset: 0;
-            background: linear-gradient(120deg,
-                    #6366f1,
-                    #22d3ee,
-                    #a855f7);
             background-size: 200% 200%;
             animation: wave 8s ease-in-out infinite;
-            clip-path: polygon(0 0,
-                    100% 0,
-                    100% 85%,
-                    0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
             z-index: 0;
+            overflow: hidden; // keep overlay contained
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(135deg, rgb(37 99 235 / 23%) 0%, rgb(56 189 248 / 19%) 100%);
+                z-index: 1;
+                pointer-events: none;
+            }
         }
+
 
         /* Container */
         .hero-container {
@@ -166,28 +175,29 @@
             /* Left Content */
             .hero-content {
                 h1 {
-                    font-weight: 700;
-                    font-size: 1.8rem;
+                    font-weight: $fw-semibold;
+                    font-size: $md-title-font;
                     margin: 0.5rem 0;
-                    color: #e5e7eb;
+                    color: $white;
 
                     span {
-                        color: #22d3ee;
+                        color: $light-primary-color;
                     }
                 }
 
                 .hero-content h2 {
-                    font-weight: 700;
-                    font-size: 1.8rem;
+                    font-weight: $fw-bold;
+                    font-size: $lg-title-font;
                     margin: 0.5rem 0;
-                    color: #e5e7eb;
+                    color: $black-300;
                 }
 
                 .hero-content p {
                     max-width: 500px;
                     margin: 1rem 0 2rem;
                     line-height: 1.6;
-                    color: #e2e8f0;
+                    color: $black-300;
+                    margin: 0;
                 }
 
                 .hero-btns {
@@ -203,21 +213,21 @@
                     }
 
                     .btn.primary {
-                        background: #22d3ee;
-                        color: #0f172a;
+                        background: $light-primary-color;
+                        color: $black;
 
                         &:hover {
-                            background: #06b6d4;
+                            background: $primary-color;
                         }
                     }
 
                     .btn.secondary {
-                        border: 2px solid #22d3ee;
-                        color: #22d3ee;
+                        border: 2px solid $light-primary-color;
+                        color: $light-primary-color;
 
                         &:hover {
-                            background: #22d3ee;
-                            color: #0f172a;
+                            background: $primary-color;
+                            color: $black;
                         }
                     }
                 }
@@ -228,97 +238,92 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                /* Card */
+                .profile-card {
+                    position: relative;
+                    width: 360px;
+                    border-radius: 28px;
+                    overflow: hidden;
+                    background: rgba(255, 255, 255, 0.06);
+                    backdrop-filter: blur(14px);
+                    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
+
+                    /* Decorative Background */
+                    .card-bg {
+                        position: absolute;
+                        inset: 0;
+                        background:
+                            radial-gradient(circle at top left, #2563eb3b 0%, transparent 55%),
+                            radial-gradient(circle at bottom right, #38bdf830 0%, transparent 55%);
+                        z-index: 0;
+                    }
+
+                    /* Image */
+                    .profile-img {
+                        position: relative;
+                        z-index: 1;
+                        padding: 1.5rem 1.5rem 0;
+                        text-align: center;
+
+                        img {
+                            width: 220px;
+                            border-radius: 18px;
+                            filter: drop-shadow($light-shadow);
+                        }
+                    }
+
+                    /* Info */
+                    .profile-info {
+                        position: relative;
+                        z-index: 1;
+                        padding: 1.5rem;
+                        text-align: center;
+
+                        h3 {
+                            margin: 0;
+                            font-size: 1.4rem;
+                            color: $white;
+                        }
+
+                        .role {
+                            margin: 0.3rem 0 1rem;
+                            font-size: 0.9rem;
+                            color: $light-primary-color;
+                        }
+
+                        /* Tech Stack */
+                        .stack {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0 0 1rem;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            gap: 0.4rem;
+
+                            li {
+                                font-size: 0.7rem;
+                                padding: 0.3rem 0.6rem;
+                                border-radius: 20px;
+                                background: rgba(15, 23, 42, 0.85);
+                                color: #e5e7eb;
+                            }
+
+                        }
+                         /* Experience Badge */
+                            .exp {
+                                display: inline-block;
+                                font-size: 0.75rem;
+                                padding: 0.35rem 0.8rem;
+                                border-radius: 20px;
+                                background: linear-gradient(135deg, #38BDF8, #2563EB);
+                                color: $black;
+                                font-weight: 600;
+                            }
+                    }
+                }
             }
-
-            /* Card */
-            .profile-card {
-                position: relative;
-                width: 360px;
-                border-radius: 28px;
-                overflow: hidden;
-                background: rgba(255, 255, 255, 0.06);
-                backdrop-filter: blur(14px);
-                box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
-            }
-
-            /* Decorative Background */
-            .card-bg {
-                position: absolute;
-                inset: 0;
-                background:
-                    radial-gradient(circle at top left, #22d3ee 0%, transparent 55%),
-                    radial-gradient(circle at bottom right, #a855f7 0%, transparent 55%);
-                z-index: 0;
-            }
-
-            /* Image */
-            .profile-img {
-                position: relative;
-                z-index: 1;
-                padding: 1.5rem 1.5rem 0;
-                text-align: center;
-            }
-
-            .profile-img img {
-                width: 220px;
-                border-radius: 18px;
-                filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
-            }
-
-            /* Info */
-            .profile-info {
-                position: relative;
-                z-index: 1;
-                padding: 1.5rem;
-                text-align: center;
-            }
-
-            .profile-info h3 {
-                margin: 0;
-                font-size: 1.4rem;
-                color: #fff;
-            }
-
-            .profile-info .role {
-                margin: 0.3rem 0 1rem;
-                font-size: 0.9rem;
-                color: #22d3ee;
-            }
-
-            /* Tech Stack */
-            .stack {
-                list-style: none;
-                padding: 0;
-                margin: 0 0 1rem;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 0.4rem;
-            }
-
-            .stack li {
-                font-size: 0.7rem;
-                padding: 0.3rem 0.6rem;
-                border-radius: 20px;
-                background: rgba(15, 23, 42, 0.85);
-                color: #e5e7eb;
-            }
-
-            /* Experience Badge */
-            .exp {
-                display: inline-block;
-                font-size: 0.75rem;
-                padding: 0.35rem 0.8rem;
-                border-radius: 20px;
-                background: linear-gradient(135deg, #22d3ee, #6366f1);
-                color: #0f172a;
-                font-weight: 600;
-            }
-
-
-
-
-
 
         }
     }

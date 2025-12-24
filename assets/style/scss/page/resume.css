@@ -1,3 +1,6 @@
+/* Section headings*/
+/* Paragraph tex*/
+/* Section sub headings*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
@@ -148,36 +151,44 @@ body {
   background-color: #fff;
 }
 
+.text-black {
+  color: #0f172a;
+}
+
+.bg-black {
+  background-color: #0f172a;
+}
+
 .text-primary-color {
-  color: #5899AE;
+  color: #2563EB;
 }
 
 .bg-primary-color {
-  background-color: #5899AE;
+  background-color: #2563EB;
 }
 
 .text-light-primary-color {
-  color: #4EABBE;
+  color: #38BDF8;
 }
 
 .bg-light-primary-color {
-  background-color: #4EABBE;
+  background-color: #38BDF8;
 }
 
 .text-light-blue-200 {
-  color: #F5FAFB;
+  color: #dbeafe;
 }
 
 .bg-light-blue-200 {
-  background-color: #F5FAFB;
+  background-color: #dbeafe;
 }
 
 .text-light-blue-300 {
-  color: rgba(0, 132, 179, 0.09);
+  color: #EFF6FF;
 }
 
 .bg-light-blue-300 {
-  background-color: rgba(0, 132, 179, 0.09);
+  background-color: #EFF6FF;
 }
 
 .text-black-200 {
@@ -228,20 +239,12 @@ body {
   background-color: #1E1F24;
 }
 
-.text-blue-800 {
-  color: #2B7BFF;
-}
-
-.bg-blue-800 {
-  background-color: #2B7BFF;
-}
-
 .text-yellow-600 {
-  color: #ffb400;
+  color: #BFBEBE;
 }
 
 .bg-yellow-600 {
-  background-color: #ffb400;
+  background-color: #BFBEBE;
 }
 
 @media (min-width: 1200px) {
@@ -356,7 +359,7 @@ body {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #4EABBE;
+  background-color: #38BDF8;
   padding: 8px;
   border: none;
   border-radius: 6px;
@@ -379,7 +382,7 @@ body {
   line-height: 1.8;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #ffb400;
+  color: #BFBEBE;
   font-size: 16px;
 }
 .resume-section__wrapper .education-wrapper .background-container .box-description {

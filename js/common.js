@@ -9,6 +9,10 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+
+
+
 // about section read more and less 
 $(document).ready(function () {
   var container = $('.about-description--wrapper');
