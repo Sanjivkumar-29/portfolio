@@ -1,0 +1,198 @@
+@import "../common.scss";
+
+// Resume section Start
+.resume-section__wrapper {
+  .resume-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dee3e4;
+    z-index: 11;
+    padding: 16px 0;
+
+    h2 {
+      font-size: 56px;
+      font-weight: 900;
+      color: #272626;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+
+      span {
+        color: #ffb400;
+      }
+    }
+
+    .title-bg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      font-size: 110px;
+      font-weight: 800;
+      letter-spacing: 10px;
+      line-height: 0.7;
+      text-transform: uppercase;
+
+      color: #dee3e4; // ✔ cleaned (removed unnecessary rgba + !important)
+      opacity: 0.35; // ✔ added for transparency effect
+
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+
+  .education-wrapper {
+    .education-title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #1E1F24;
+      margin-bottom: 22px;
+    }
+
+    .background-container {
+      background-color: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-sizing: border-box;
+      border: 1px solid $black-400;
+      border-radius: 12px;
+
+      .date-badge {
+        display: inline-block;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        background-color: $light-primary-color;
+        padding: 8px;
+        border: none;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 400;
+        color: $white;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+
+      .box-title {
+        font-size: 22px;
+        font-weight: 500;
+        color: $black-800;
+        margin-top: 0;
+        margin-bottom: 8px;
+        line-height: 1.2;
+
+      }
+
+      .box-sub-title {
+        display: inline-block;
+        line-height: 1.8;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: $yellow-600;
+        font-size: 16px;
+      }
+
+      .box-description {
+        margin: o;
+        line-height: 1.8;
+        color: $black-500;
+        font-size: 16px;
+        font-weight: 400;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+
+  // resume skills slider
+  .resume-skill__wrapper {
+    padding: 80px 20px;
+    margin: 0;
+
+    .skill-title__box {
+      display: block;
+      text-align: center;
+
+      .skill-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 10px;
+        font-weight: 600;
+
+        .skill-subtitle {
+          text-align: center;
+          color: #6b7280;
+          margin-bottom: 50px;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .skill-card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-8px);
+      }
+
+      .image-wrpper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      img {
+        width: 60px;
+        height: 100%;
+        background-repeat: no-repeat;
+        object-position: center;
+        object-fit: cover;
+      }
+
+      h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #111;
+      }
+
+      .progress {
+        width: 100%;
+        height: 8px;
+        background: #e5e7eb;
+        border-radius: 10px;
+        overflow: hidden;
+        direction: ltr;
+      }
+
+      .progress span {
+        display: block;
+        height: 100%;
+        background: linear-gradient(to right, #6366f1, #4f46e5);
+        border-radius: 10px;
+        transform-origin: left !important;
+      }
+
+
+    }
+
+  }
+}
+
+// Resume section End

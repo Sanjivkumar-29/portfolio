@@ -16,9 +16,15 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-
+  <link rel="stylesheet" href="./assets/style/scss/page/header.css">
+  <link rel="stylesheet" href="./assets/style/scss/page/about.css">
+  <link rel="stylesheet" href="./assets/style/scss/page/resume.css">
+  <link rel="stylesheet" href="./assets/style/scss/page/project.css">
+  <link rel="stylesheet" href="./assets/style/scss/page/service.css">
   <link rel="stylesheet" href="./assets/style/scss/page/blog.css">
-  <link rel="stylesheet" href="./assets/style/scss/page/contact.css">
+    <link rel="stylesheet" href="./assets/style/scss/page/testimonial.css">
+    <link rel="stylesheet" href="./assets/style/scss/page/contact.css">
+    <link rel="stylesheet" href="./assets/style/scss/page/footer.css">
 </head>
 
 <body>
@@ -29,7 +35,8 @@
       <div class="container-fluid g-lg-4">
         <div class="col-auto col-lg-2">
           <!-- Logo -->
-          <a class="logo-link" href="index.html" title="Simone"> <img src="./assets/images/logo-light.png" alt="Simone">
+          <a class="logo-link" href="index.html" title="Simone"> <img src="./assets/images/sanjiv-logo-transparent.png"
+              alt="Simone">
           </a>
           <!-- Logo End -->
         </div>
@@ -54,6 +61,535 @@
     <!-- Navbar End -->
   </header>
   <!-- Header End -->
+
+  <!-- Banner Section start -->
+  <section class="banner-section__wrapper">
+    <div class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <h1>Hi, I'm <span>Sanjiv</span></h1>
+          <h2>Frontend Developer</h2>
+          <p>
+            I build modern, responsive, and user-friendly websites using
+            HTML, CSS, SASS, and JavaScript.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#portfolio" class="btn primary">View Portfolio</a>
+            <a href="#contact" class="btn secondary">Hire Me</a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="hero-image unified">
+          <div class="profile-card">
+            <div class="card-bg"></div>
+
+            <div class="profile-img">
+              <img src="./assets/images/banner-image(1).jpg" alt="Frontend Developer">
+            </div>
+
+            <div class="profile-info">
+              <h3>Sanjiv Thakur</h3>
+              <p class="role">Frontend Developer</p>
+
+              <ul class="stack">
+                <li>HTML</li>
+                <li>CSS / SASS</li>
+                <li>Tailwind</li>
+                <li>Responsive UI</li>
+              </ul>
+
+              <span class="exp">1+ Year Experience</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+  </section>
+  <!-- Banner section End -->
+
+    <!-- About section start -->
+  <div class="about-content">
+    <div class="container section-padding">
+      <!-- contact Title Start -->
+      <div class="about-title">
+        <h2>
+          About
+          <span>Me</span>
+        </h2>
+        <span class="title-bg">Overview</span>
+      </div>
+      <!-- contact Title End -->
+      <div class="row" style="margin-top: 3rem;">
+        <div class="col-lg-7 mb-3 mb-lg-0">
+          <ul class="nav nav-pills about-tab-bottom mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-summary"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Summary</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-PersonalProfile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false">Personal Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+            </li>
+          </ul>
+          <div class="tab-content about-tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-summary" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="about-content__text">
+                <h1 class="about-content__title">Introduction</h1>
+                <div class="about-description--wrapper">
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae suscipit, adipisci
+                    quasi
+                    officia praesentium mollitia quisquam esse quo excepturi distinctio! A ad optio eius possimus
+                    perferendis laborum atque fuga ipsam qui, veritatis quos ab rem voluptate, corporis illo dicta esse
+                    dolor. Velit quisquam facere autem porro adipisci aut, architecto sint voluptas exercitationem
+                    officiis
+                    culpa reprehenderit pariatur! Itaque laboriosam molestias dolore magni consectetur deleniti aut
+                    consequuntur, sed magnam nam rerum. Earum quibusdam maxime beatae natus recusandae ullam quo ab.
+                    Eaque
+                    modi officiis perspiciatis fugit cumque dolor ipsa dolores ducimus at rem porro nihil, libero, harum
+                    voluptas? Reiciendis dolores accusamus suscipit!
+                  </p>
+
+                </div>
+                <button class="toggle--btn">Read more <span class="icon-wrapper">
+                    <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-PersonalProfile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="personal-info_wrapper">
+                <h1 class="personal-info__title">Personal Info</h1>
+                <div class="row p-0">
+                  <div class="col-4">
+                    <ul class="info-list-wrapper">
+                      <li class="list-info">
+                        <span class="info-title">First Name :</span>
+                        <span class="info-con">Sanjiv</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Last Name :</span>
+                        <span class="info-con">Thakur</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Age :</span>
+                        <span class="info-con">27</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Nationality :</span>
+                        <span class="info-con">Nepali</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Religion :</span>
+                        <span class="info-con">Hindu</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-8">
+                    <ul class="info-list-wrapper">
+                      <li class="list-info">
+                        <span class="info-title">Address :</span>
+                        <span class="info-con">Imadol, Lalitpur, Nepal</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Phone :</span>
+                        <span class="info-con">+977 9864215460</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Email :</span>
+                        <span class="info-con">thakursanjivkumar37@gmail.com</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Linkedin :</span>
+                        <span class="info-con">www.linkedin.com/in/sanjivthakur5533</span>
+                      </li>
+                      <li class="list-info">
+                        <span class="info-title">Language :</span>
+                        <span class="info-con">English, Nepali, Maitheli, Hindi</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+          </div>
+
+        </div>
+        <div class="col-lg-5 ps-lg-5">
+          <div class="about-content__image-wrapper">
+            <img class="about-content__image" src="./assets/images/profile.jpg" alt="Profile" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About section end -->
+
+   <!-- Resume section start -->
+  <section class="resume-section__wrapper">
+    <div class="container">
+      <!--Resume Title Start -->
+      <div class="resume-title mb-5">
+        <h2>
+          Resume
+          <span>-</span>
+        </h2>
+        <span class="title-bg">Summary</span>
+      </div>
+      <!-- Resume Title End -->
+
+      <div class="row gx-5">
+        <div class="col-md-6 education-wrapper">
+          <h2 class="education-title">My Education</h2>
+          <div class="background-container">
+            <span class="date-badge">2018 - 2025</span>
+            <h3 class="box-title">Bachelor of Engineering in Information Technology</h3>
+            <span class="box-sub-title">Pokhara University</span>
+            <p class="box-description">I completed my bachelor’s degree from Nepal College of Information Technology
+              (NCIT), Balkumari, Lalitpur, Nepal.</p>
+          </div>
+          <div class="background-container">
+            <span class="date-badge">2015 - 2017</span>
+            <h3 class="box-title">+2 Science</h3>
+            <span class="box-sub-title">Pokhara University</span>
+            <p class="box-description">I completed my +2 Science from Rajarshi Janak Secondary School, Janakpurdham,
+              Dhanusha, Nepal</p>
+          </div>
+          <div class="background-container">
+            <span class="date-badge">2003 - 2015</span>
+            <h3 class="box-title">SLC (School Leaving Certificate)</h3>
+            <span class="box-sub-title">Department of Education (DoE)</span>
+            <p class="box-description">I completed my School Leaving Certificate (SLC) from Shree Asarsh Higher
+              Secondary School, Ratauli, Mahottari, Nepal</p>
+          </div>
+          <div class="background-container">
+            <span class="date-badge">Apr 2024 - Jul 2024</span>
+            <h3 class="box-title">Web Design</h3>
+            <span class="box-sub-title">Broadway Infosys</span>
+            <p class="box-description">Successfully completing of professional web design training from Broadway Infosys
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 education-wrapper">
+          <h2 class="education-title">My Experience</h2>
+          <div class="background-container">
+            <span class="date-badge">sep 2024 - Apr 2025</span>
+            <h3 class="box-title">Jr. Front-End Developer</h3>
+            <span class="box-sub-title">Neputer Tech Pvt Ltd (Kathmandu, Nepal)</span>
+            <p class="box-description">I completed my bachelor’s degree from Nepal College of Information Technology
+              (NCIT), Balkumari, Lalitpur, Nepal.</p>
+          </div>
+          <div class="background-container">
+            <span class="date-badge">jul 2024 - Aug 2024</span>
+            <h3 class="box-title">Intern as Front-End</h3>
+            <span class="box-sub-title">Neputer Tech Pvt Ltd (Kathmandu, Nepal)</span>
+            <p class="box-description">I completed my bachelor’s degree from Nepal College of Information Technology
+              (NCIT), Balkumari, Lalitpur, Nepal.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Resume skills slider -->
+      <div class="resume-skill__wrapper">
+        <div class="skill-title__box">
+          <h2 class="skill-title">My Skills</h2>
+          <p class="skill-subtitle">
+            Technologies and tools I use to build modern websites.
+          </p>
+        </div>
+        <div class="owl-carousel skills-carousel">
+
+          <div class="skill-card">
+            <div class="image-wrpper">
+              <img src="./assets/images/html.png" alt="HTML">
+            </div>
+            <h4>HTML5</h4>
+            <div class="progress">
+              <span style="width: 95%"></span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="image-wrpper">
+              <img src="./assets/images/css-3.png" alt="HTML">
+            </div>
+            <h4>CSS3 / SCSS</h4>
+            <div class="progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="image-wrpper">
+              <img src="./assets/images/tailwind.png" alt="HTML">
+            </div>
+            <h4>Tailwind CSS</h4>
+            <div class="progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="image-wrpper">
+              <img src="./assets/images/bootstrap.png" alt="HTML">
+            </div>
+            <h4>Bootstrap</h4>
+            <div class="progress">
+              <span style="width: 90%"></span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="image-wrpper">
+              <img src="./assets/images/js.png" alt="HTML">
+            </div>
+            <h4>JavaScript</h4>
+            <div class="progress">
+              <span style="width: 750%"></span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="image-wrpper">
+              <img src="./assets/images/react.png" alt="HTML">
+            </div>
+            <h4>React.js</h4>
+            <div class="progress">
+              <span style="width: 75%"></span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="image-wrpper">
+              <img src="./assets/images/git and github.png" alt="HTML">
+            </div>
+            <h4>Git & GitHu</h4>
+            <div class="progress">
+              <span style="width: 80%"></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Resume section End -->
+
+    <!--Project section start  -->
+  <section class="project-section__wrapper">
+    <div class="container">
+      <div class="Project--title">
+        <h2>My
+          <span>Work</span>
+        </h2>
+        <span class="title-bg">Portfolio</span>
+      </div>
+      <div class="service-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nesciunt
+          quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
+          natus, pariatur, eligendi mollitia.</p>
+      </div>
+      <div class="portfolio-filter__wrapper">
+        <div class="portfolio-filter">
+          <ul class="filter">
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".website" class="">Website</li>
+            <li data-filter=".photoshop" class="">Photoshop</li>
+            <li data-filter=".figma" class="">Figma</li>
+          </ul>
+        </div>
+        <div class="portfolio-content">
+          <ul class="portfolio-cols">
+            <li class="portfolio-item website">
+              <div class="portfolio-wrapper">
+                <a href="https://personal-portfoli29.netlify.app" target="_blank" rel="noopener" class="pic-link">
+                  <img src="./assets/images/project-1.avif" title="" alt="">
+                </a>
+                <div class="portfolio-info">
+                  <h5>Sanjiv Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>
+            </li> <!-- col -->
+
+            <li class="portfolio-item figma">
+              <div class="portfolio-wrapper">
+                <a href="#" class="pic-link">
+                  <img src="./assets/images/project-5.avif" title="" alt="">
+                </a>
+                <div class="portfolio-info">
+                  <h5>Ryan Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>
+            </li> <!-- col -->
+
+            <li class="portfolio-item photoshop figma">
+              <div class="portfolio-wrapper">
+                <a href="#" class="pic-link">
+                  <img src="./assets/images/project-3.avif" title="" alt="">
+                </a>
+                <div class="portfolio-info">
+                  <h5>Ryan Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>
+            </li> <!-- col -->
+
+            <li class="portfolio-item photoshop website">
+              <div class="portfolio-wrapper">
+                <a href="#" class="pic-link">
+                  <img src="./assets/images/project-2.avif" title="" alt="">
+                </a>
+                <div class="portfolio-info">
+                  <h5>Ryan Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="portfolio-item photoshop figma">
+              <div class="portfolio-wrapper">
+                <a href="#" class="pic-link">
+                  <img src="./assets/images/project-4.webp" title="" alt="">
+                </a>
+                <div class="portfolio-info">
+                  <h5>Ryan Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="portfolio-item figma website">
+              <div class="portfolio-wrapper">
+                <a href="#" class="pic-link">
+                  <img src="./assets/images/project-2.avif" title="" alt="">
+                </a>
+                <div class="portfolio-info">
+                  <h5>Ryan Portpolio Template</h5>
+                  <span>Resent Work</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Project section end -->
+
+    <!-- Service start -->
+  <section class="service-section__wrapper section-padding">
+    <div class="container">
+      <!-- service title start -->
+      <div class="service--title">
+        <h2>What
+          <span>I Do</span>
+        </h2>
+        <span class="title-bg">Service</span>
+      </div>
+
+      <div class="content-title">
+        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nesciunt
+          quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
+          natus, pariatur, eligendi mollitia.</p>
+      </div>
+      <div class="row g-5 feature-box__wrapper">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="icon-box__wrapper">
+              <iconify-icon icon="streamline-ultimate:responsive-design-hand" class="box-icon"></iconify-icon>
+            </div>
+            <div class="feature-content">
+              <h5 class="feature-title">Web Design</h5>
+              <p class="feature-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vitae maiores
+                amet fuga molestiae perferendis architecto similique alias. Voluptates iusto eligendi in molestiae neque
+                atque perspiciatis incidunt doloremque facere voluptate.</p>
+              <div class="read-more">
+                <button type="button" class="btn read-more__btn" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
+                  Read more
+                  <iconify-icon icon="lineicons:arrow-right-circle" class="read-more__icon">
+                  </iconify-icon>
+                </button>
+
+                <!-- Modal start-->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Web Design</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="model-service__content">
+                          <!-- Image / Illustration Section -->
+                          <div class="model-service__imgbox">
+                            <img src="./assets/images/service-1.jpg" alt="Web Design Illustration">
+                          </div>
+
+                          <!-- Text Content Section -->
+                          <div class="service-text">
+                            <p class="intro">
+                              I design modern, responsive, and user-friendly websites that help businesses
+                              and individuals establish a strong online presence.
+                            </p>
+
+                            <div class="features">
+                              <h3>What I Offer:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Responsive Design – Works on all devices</li>
+                                <li class="list">Custom UI & UX Design – Clean, modern layouts</li>
+                                <li class="list">HTML5 & CSS3 – Well-structured, semantic code</li>
+                                <li class="list">SEO-Friendly Structure – Better search engine visibility</li>
+                                <li class="list">Fast Loading Speed – Optimized images & code</li>
+                                <li class="list">Cross-Browser Compatibility – Chrome, Firefox, Edge, Safari</li>
+                              </ul>
+                            </div>
+
+                            <div class="features">
+                              <h3>Types of Websites I Design:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Personal Portfolio</li>
+                                <li class="list">Business / Company Websites</li>
+                                <li class="list">Landing Pages</li>
+                                <li class="list">Blogs & Informational Sites</li>
+                                <li class="list">Simple E-commerce UI</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- service title end -->
+    </div>
+  </section>
+  <!-- service End -->
+
   <!-- Blog content stat -->
   <div class="blog-page-section">
     <!-- Page Title Start -->
@@ -227,131 +763,72 @@
   </div>
   <!-- Blog contetent end -->
 
-  <!-- About section start -->
-  <div class="about-content">
-    <div class="container section-padding">
-      <!-- contact Title Start -->
-      <div class="about-title">
-        <h2>
-          About
-          <span>Me</span>
+  <!-- Testimonial section start -->
+  <section class="testimonial-section__wrapper section-padding">
+    <div class="container">
+      <div class="testimonial--title">
+        <h2>Peer
+          <span>Reviews</span>
         </h2>
-        <span class="title-bg">Overview</span>
+        <span class="title-bg">Testimonial</span>
       </div>
-      <!-- contact Title End -->
-      <div class="row" style="margin-top: 3rem;">
-        <div class="col-lg-7 mb-3 mb-lg-0">
-          <ul class="nav nav-pills about-tab-bottom mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-summary"
-                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Summary</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-PersonalProfile" type="button" role="tab" aria-controls="pills-profile"
-                aria-selected="false">Personal Profile</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-            </li>
-          </ul>
-          <div class="tab-content about-tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-summary" role="tabpanel" aria-labelledby="pills-home-tab">
-              <div class="about-content__text">
-                <h1 class="about-content__title">Introduction</h1>
-                <div class="about-description--wrapper">
-                  <p class="text-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae suscipit, adipisci
-                    quasi
-                    officia praesentium mollitia quisquam esse quo excepturi distinctio! A ad optio eius possimus
-                    perferendis laborum atque fuga ipsam qui, veritatis quos ab rem voluptate, corporis illo dicta esse
-                    dolor. Velit quisquam facere autem porro adipisci aut, architecto sint voluptas exercitationem
-                    officiis
-                    culpa reprehenderit pariatur! Itaque laboriosam molestias dolore magni consectetur deleniti aut
-                    consequuntur, sed magnam nam rerum. Earum quibusdam maxime beatae natus recusandae ullam quo ab.
-                    Eaque
-                    modi officiis perspiciatis fugit cumque dolor ipsa dolores ducimus at rem porro nihil, libero, harum
-                    voluptas? Reiciendis dolores accusamus suscipit!
-                  </p>
-
-                </div>
-                <button class="toggle--btn">Read more <span class="icon-wrapper">
-                    <iconify-icon icon="iconamoon:arrow-down-2" width="24" height="24"></iconify-icon>
-                  </span>
-                </button>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-PersonalProfile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <div class="personal-info_wrapper">
-                <h1 class="personal-info__title">Personal Info</h1>
-                <div class="row p-0">
-                  <div class="col-4">
-                    <ul class="info-list-wrapper">
-                      <li class="list-info">
-                        <span class="info-title">First Name :</span>
-                        <span class="info-con">Sanjiv</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Last Name :</span>
-                        <span class="info-con">Thakur</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Age :</span>
-                        <span class="info-con">27</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Nationality :</span>
-                        <span class="info-con">Nepali</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Religion :</span>
-                        <span class="info-con">Hindu</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-8">
-                    <ul class="info-list-wrapper">
-                      <li class="list-info">
-                        <span class="info-title">Address :</span>
-                        <span class="info-con">Imadol, Lalitpur, Nepal</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Phone :</span>
-                        <span class="info-con">+977 9864215460</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Email :</span>
-                        <span class="info-con">thakursanjivkumar37@gmail.com</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Linkedin :</span>
-                        <span class="info-con">www.linkedin.com/in/sanjivthakur5533</span>
-                      </li>
-                      <li class="list-info">
-                        <span class="info-title">Language :</span>
-                        <span class="info-con">English, Nepali, Maitheli, Hindi</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      <div class="testimonial-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nesciunt
+          quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
+          natus, pariatur, eligendi mollitia.</p>
+      </div>
+      <div class="owl-carousel testimonial-carousel owl-theme">
+        <div class="testimonial-col">
+          <div class="image-wrapper">
+            <img src="./assets/images/project-3.avif" alt="salman">
           </div>
-
+          <h6 class="review-title">Salman Khan</h6>
+          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo,
+            asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum
+            voluptatem cumque optio.</p>
         </div>
-        <div class="col-lg-5 ps-lg-5">
-          <div class="about-content__image-wrapper">
-            <img class="about-content__image" src="./assets/images/profile.jpg" alt="Profile" />
+        <div class="testimonial-col">
+          <div class="image-wrapper">
+            <img src="./assets/images/project-5.avif" alt="salman">
           </div>
+          <h6 class="review-title">Salman Khan</h6>
+          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo,
+            asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum
+            voluptatem cumque optio.</p>
+        </div>
+        <div class="testimonial-col">
+          <div class="image-wrapper">
+            <img src="./assets/images/project-1.avif" alt="salman">
+          </div>
+          <h6 class="review-title">Salman Khan</h6>
+          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo,
+            asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum
+            voluptatem cumque optio.</p>
+        </div>
+        <div class="testimonial-col">
+          <div class="image-wrapper">
+            <img src="./assets/images/project-2.avif" alt="salman">
+          </div>
+          <h6 class="review-title">Salman Khan</h6>
+          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo,
+            asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum
+            voluptatem cumque optio.</p>
+        </div>
+        <div class="testimonial-col">
+          <div class="image-wrapper">
+            <img src="./assets/images/project-4.webp" alt="salman">
+          </div>
+          <h6 class="review-title">Salman Khan</h6>
+          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo,
+            asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum
+            voluptatem cumque optio.</p>
         </div>
       </div>
     </div>
-  </div>
-  <!-- About section end -->
+  </section>
+  <!-- Testimonial section end -->
 
-  <!-- Contact section start -->
+   <!-- Contact section start -->
   <section class="contact-section_wrapper">
     <div class="container section-padding">
       <!-- contact Title Start -->
@@ -438,336 +915,6 @@
   </section>
   <!-- Contact section End -->
 
-  <!-- Resume section start -->
-  <section class="resume-section__wrapper">
-    <div class="container">
-      <!--Resume Title Start -->
-      <div class="resume-title mb-5">
-        <h2>
-          Resume
-          <span>-</span>
-        </h2>
-        <span class="title-bg">Summary</span>
-      </div>
-      <!-- Resume Title End -->
-
-      <div class="row gx-5">
-        <div class="col-md-6 education-wrapper">
-          <h2 class="education-title">My Education</h2>
-          <div class="background-container">
-            <span class="date-badge">2018 - 2025</span>
-            <h3 class="box-title">Bachelor of Engineering in Information Technology</h3>
-            <span class="box-sub-title">Pokhara University</span>
-            <p class="box-description">I completed my bachelor’s degree from Nepal College of Information Technology
-              (NCIT), Balkumari, Lalitpur, Nepal.</p>
-          </div>
-          <div class="background-container">
-            <span class="date-badge">2015 - 2017</span>
-            <h3 class="box-title">+2 Science</h3>
-            <span class="box-sub-title">Pokhara University</span>
-            <p class="box-description">I completed my +2 Science from Rajarshi Janak Secondary School, Janakpurdham,
-              Dhanusha, Nepal</p>
-          </div>
-          <div class="background-container">
-            <span class="date-badge">2003 - 2015</span>
-            <h3 class="box-title">SLC (School Leaving Certificate)</h3>
-            <span class="box-sub-title">Department of Education (DoE)</span>
-            <p class="box-description">I completed my School Leaving Certificate (SLC) from Shree Asarsh Higher
-              Secondary School, Ratauli, Mahottari, Nepal</p>
-          </div>
-          <div class="background-container">
-            <span class="date-badge">Apr 2024 - Jul 2024</span>
-            <h3 class="box-title">Web Design</h3>
-            <span class="box-sub-title">Broadway Infosys</span>
-            <p class="box-description">Successfully completing of professional web design training from Broadway Infosys
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 education-wrapper">
-          <h2 class="education-title">My Experience</h2>
-          <div class="background-container">
-            <span class="date-badge">sep 2024 - Apr 2025</span>
-            <h3 class="box-title">Jr. Front-End Developer</h3>
-            <span class="box-sub-title">Neputer Tech Pvt Ltd (Kathmandu, Nepal)</span>
-            <p class="box-description">I completed my bachelor’s degree from Nepal College of Information Technology
-              (NCIT), Balkumari, Lalitpur, Nepal.</p>
-          </div>
-          <div class="background-container">
-            <span class="date-badge">jul 2024 - Aug 2024</span>
-            <h3 class="box-title">Intern as Front-End</h3>
-            <span class="box-sub-title">Neputer Tech Pvt Ltd (Kathmandu, Nepal)</span>
-            <p class="box-description">I completed my bachelor’s degree from Nepal College of Information Technology
-              (NCIT), Balkumari, Lalitpur, Nepal.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Resume section End -->
-
-  <!-- Service start -->
-  <section class="service-section__wrapper section-padding">
-    <div class="container">
-      <!-- service title start -->
-      <div class="service--title">
-        <h2>What
-          <span>I Do</span>
-        </h2>
-        <span class="title-bg">Service</span>
-      </div>
-
-      <div class="content-title">
-        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nesciunt
-          quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
-          natus, pariatur, eligendi mollitia.</p>
-      </div>
-      <div class="row g-5 feature-box__wrapper">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="feature-box">
-            <div class="icon-box__wrapper">
-              <iconify-icon icon="streamline-ultimate:responsive-design-hand" class="box-icon"></iconify-icon>
-            </div>
-            <div class="feature-content">
-              <h5 class="feature-title">Web Design</h5>
-              <p class="feature-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vitae maiores
-                amet fuga molestiae perferendis architecto similique alias. Voluptates iusto eligendi in molestiae neque
-                atque perspiciatis incidunt doloremque facere voluptate.</p>
-              <div class="read-more">
-                <button type="button" class="btn read-more__btn" data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop">
-                  Read more
-                  <iconify-icon icon="lineicons:arrow-right-circle" class="read-more__icon">
-                  </iconify-icon>
-                </button>
-
-                <!-- Modal start-->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Web Design</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="model-service__content">
-                          <!-- Image / Illustration Section -->
-                          <div class="model-service__imgbox">
-                            <img src="./assets/images/service-1.jpg" alt="Web Design Illustration">
-                          </div>
-
-                          <!-- Text Content Section -->
-                          <div class="service-text">
-                            <p class="intro">
-                              I design modern, responsive, and user-friendly websites that help businesses
-                              and individuals establish a strong online presence.
-                            </p>
-
-                            <div class="features">
-                              <h3>What I Offer:</h3>
-                              <ul class="list-wrapper">
-                                <li class="list">Responsive Design – Works on all devices</li>
-                                <li class="list">Custom UI & UX Design – Clean, modern layouts</li>
-                                <li class="list">HTML5 & CSS3 – Well-structured, semantic code</li>
-                                <li class="list">SEO-Friendly Structure – Better search engine visibility</li>
-                                <li class="list">Fast Loading Speed – Optimized images & code</li>
-                                <li class="list">Cross-Browser Compatibility – Chrome, Firefox, Edge, Safari</li>
-                              </ul>
-                            </div>
-
-                            <div class="features">
-                              <h3>Types of Websites I Design:</h3>
-                              <ul class="list-wrapper">
-                                <li class="list">Personal Portfolio</li>
-                                <li class="list">Business / Company Websites</li>
-                                <li class="list">Landing Pages</li>
-                                <li class="list">Blogs & Informational Sites</li>
-                                <li class="list">Simple E-commerce UI</li>
-                              </ul>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal end-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- service title end -->
-    </div>
-  </section>
-  <!-- service End -->
-
-  <!--Project section start  -->
-  <section class="project-section__wrapper">
-    <div class="container">
-      <div class="Project--title">
-        <h2>My
-          <span>Work</span>
-        </h2>
-        <span class="title-bg">Portfolio</span>
-      </div>
-      <div class="service-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nesciunt
-          quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
-          natus, pariatur, eligendi mollitia.</p>
-      </div>
-      <div class="portfolio-filter__wrapper">
-        <div class="portfolio-filter">
-          <ul class="filter">
-            <li class="active" data-filter="*">All</li>
-            <li data-filter=".website" class="">Website</li>
-            <li data-filter=".photoshop" class="">Photoshop</li>
-            <li data-filter=".figma" class="">Figma</li>
-          </ul>
-        </div>
-        <div class="portfolio-content">
-          <ul class="portfolio-cols">
-            <li class="portfolio-item website">
-              <div class="portfolio-wrapper">
-                <a href="https://personal-portfoli29.netlify.app" target="_blank" rel="noopener" class="pic-link">
-                  <img src="./assets/images/project-1.avif" title="" alt="">
-                </a>
-                <div class="portfolio-info">
-                  <h5>Sanjiv Portpolio Template</h5>
-                  <span>Resent Work</span>
-                </div>
-              </div>
-            </li> <!-- col -->
-
-            <li class="portfolio-item figma">
-              <div class="portfolio-wrapper">
-                <a href="#" class="pic-link">
-                  <img src="./assets/images/project-5.avif" title="" alt="">
-                </a>
-                <div class="portfolio-info">
-                  <h5>Ryan Portpolio Template</h5>
-                  <span>Resent Work</span>
-                </div>
-              </div>
-            </li> <!-- col -->
-
-            <li class="portfolio-item photoshop figma">
-              <div class="portfolio-wrapper">
-                <a href="#" class="pic-link">
-                  <img src="./assets/images/project-3.avif" title="" alt="">
-                </a>
-                <div class="portfolio-info">
-                  <h5>Ryan Portpolio Template</h5>
-                  <span>Resent Work</span>
-                </div>
-              </div>
-            </li> <!-- col -->
-
-            <li class="portfolio-item photoshop website">
-              <div class="portfolio-wrapper">
-                <a href="#" class="pic-link">
-                  <img src="./assets/images/project-2.avif" title="" alt="">
-                </a>
-                <div class="portfolio-info">
-                  <h5>Ryan Portpolio Template</h5>
-                  <span>Resent Work</span>
-                </div>
-              </div>
-            </li>
-
-            <li class="portfolio-item photoshop figma">
-              <div class="portfolio-wrapper">
-                <a href="#" class="pic-link">
-                  <img src="./assets/images/project-4.webp" title="" alt="">
-                </a>
-                <div class="portfolio-info">
-                  <h5>Ryan Portpolio Template</h5>
-                  <span>Resent Work</span>
-                </div>
-              </div>
-            </li>
-
-            <li class="portfolio-item figma website">
-              <div class="portfolio-wrapper">
-                <a href="#" class="pic-link">
-                  <img src="./assets/images/project-2.avif" title="" alt="">
-                </a>
-                <div class="portfolio-info">
-                  <h5>Ryan Portpolio Template</h5>
-                  <span>Resent Work</span>
-                </div>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Project section end -->
-
-  <!-- Testimonial section start -->
-  <section class="testimonial-section__wrapper section-padding">
-    <div class="container">
-      <div class="testimonial--title">
-        <h2>Peer
-          <span>Reviews</span>
-        </h2>
-        <span class="title-bg">Testimonial</span>
-      </div>
-      <div class="testimonial-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nesciunt
-          quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
-          natus, pariatur, eligendi mollitia.</p>
-      </div>
-      <div class="owl-carousel owl-theme">
-        <div class="testimonial-col">
-          <div class="image-wrapper">
-            <img src="./assets/images/project-3.avif" alt="salman">
-          </div>
-          <h6 class="review-title">Salman Khan</h6>
-          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo,
-            asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum
-            voluptatem cumque optio.</p>
-        </div>
-        <div class="testimonial-col">
-          <div class="image-wrapper">
-            <img src="./assets/images/project-5.avif" alt="salman">
-          </div>
-          <h6 class="review-title">Salman Khan</h6>
-          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo,
-            asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum
-            voluptatem cumque optio.</p>
-        </div>
-        <div class="testimonial-col">
-          <div class="image-wrapper">
-            <img src="./assets/images/project-1.avif" alt="salman">
-          </div>
-          <h6 class="review-title">Salman Khan</h6>
-          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo, asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum voluptatem cumque optio.</p>
-        </div>
-        <div class="testimonial-col">
-          <div class="image-wrapper">
-            <img src="./assets/images/project-2.avif" alt="salman">
-          </div>
-          <h6 class="review-title">Salman Khan</h6>
-          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo, asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum voluptatem cumque optio.</p>
-        </div>
-        <div class="testimonial-col">
-          <div class="image-wrapper">
-            <img src="./assets/images/project-4.webp" alt="salman">
-          </div>
-          <h6 class="review-title">Salman Khan</h6>
-          <p class="review-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit et sit nam? Quo, asperiores vel iste adipisci enim modi, obcaecati atque facere odit culpa, voluptatibus suscipit laborum voluptatem cumque optio.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Testimonial section end -->
 
   <!-- footer section start -->
   <footer class="footer__section-wrapper">
@@ -776,7 +923,7 @@
         <div class="top-wrapper">
           <div class="footer-image">
             <a href="#">
-              <img src="./assets/images/logo-light.png" alt="footer img">
+              <img src="./assets/images/sanjiv-logo-transparent.png" alt="footer img">
             </a>
           </div>
           <div class="footer-social-link">
@@ -827,8 +974,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- iconify icon -->
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <script src="./js/about-us.js"></script>
-  <script src="./js/header.js"></script>
+  <script src="./js/common.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,206 @@
+@import "../common.scss";
+
+// About section start 
+.about-content {
+  .about-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dee3e4;
+    z-index: 11;
+    padding: 16px 0;
+
+    h2 {
+      font-size: 56px;
+      font-weight: 900;
+      color: #272626;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+
+      span {
+        color: #ffb400;
+      }
+    }
+
+    .title-bg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      font-size: 110px;
+      font-weight: 800;
+      letter-spacing: 10px;
+      line-height: 0.7;
+      text-transform: uppercase;
+
+      color: #dee3e4; // ✔ cleaned (removed unnecessary rgba + !important)
+      opacity: 0.35; // ✔ added for transparency effect
+
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+
+  // about-tab-bottom start
+  .about-tab-bottom {
+    .nav-link {
+      background: transparent;
+      border: none;
+      color: $black-800;
+      position: relative;
+      font-size: 18px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        height: 2px;
+        background-color: $black-400;
+        transition: width 0.3s ease;
+      }
+    }
+
+    .nav-link.active {
+      color: $light-primary-color;
+
+      &::after {
+        width: 100%;
+        background-color: #ffb400;
+      }
+    }
+  }
+
+  // about-tab-bottom End
+
+  // about-tab-content start
+  .about-tab-content {
+
+    .about-content__text {
+      .about-content__title {
+        font-size: $md-title-font;
+        font-weight: $fw-medium;
+        line-height: 1.5;
+      }
+
+      .about-description--wrapper {
+        margin-bottom: 20px;
+        max-height: none;
+        overflow: hidden;
+        transition: height 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
+
+        .text-content {
+          font-size: $base-font;
+          font-weight: $fw-regular;
+          color: $black-600;
+          transition: all 0.7s ease-in-out 0.3s;
+          line-height: 1.6;
+          margin-bottom: 0;
+        }
+      }
+
+      .toggle--btn {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 16px;
+        position: relative;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #ffb400;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        justify-content: center;
+        transition: all 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
+        font-weight: 500;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 100%;
+          height: 100px;
+          z-index: -1;
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+        }
+
+        .icon-wrapper {
+          font-size: 24px;
+          display: flex;
+          color: #ffb400;
+        }
+      }
+    }
+
+    .personal-info_wrapper {
+      .personal-info__title {
+        font-size: $md-title-font;
+        font-weight: $fw-medium;
+        line-height: 1.5;
+        color: $black-800;
+      }
+
+      .info-list-wrapper {
+        font-family: sans-serif;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 1rem;
+
+        .list-info {
+          padding-bottom: 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+          color: $black-600;
+
+          .info-title {
+            text-transform: capitalize;
+            opacity: 0.8;
+            font-weight: 500;
+          }
+
+          .info-con {
+            font-weight: 600;
+            display: block;
+
+          }
+        }
+      }
+    }
+
+
+  }
+
+  // about-tab-content End
+
+  .about-content__image-wrapper {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+
+    .about-content__image {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1; // same as 2/2
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+
+  }
+}
+
+// About section End
