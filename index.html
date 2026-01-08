@@ -29,42 +29,110 @@
 
 <body>
   <!-- Header start  -->
-  <header id="header" class="sticky-top-slide">
+  <header id="header-wrapper" class="header-sticky">
+    <div class="container-fluid"></div>
     <!-- Navbar -->
-    <nav class="primary-menu navbar navbar-expand-lg navbar-dark sticky-on">
-      <div class="container-fluid g-lg-4">
-        <div class="col-auto col-lg-2">
-          <!-- Logo -->
-          <a class="logo-link" href="index.html" title="Simone"> <img src="./assets/images/sanjiv-logo-transparent.png"
-              alt="Simone">
-          </a>
-          <!-- Logo End -->
-        </div>
-        <div class="col col-lg-8 navbar-accordion">
-          <div id="header-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll active" href="#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#resume">Resume</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">What I Do</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#blog">Blog</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#testimonial">Client</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-auto col-lg-2 d-flex justify-content-end ">
-          <a href="#co" class="btn contact-btn">Get in Touch</a>
-        </div>
+    <div class="header-menu">
+      <!-- Logo -->
+      <a class="logo-link" href="index.html" title="sanjiv">
+        <img src="./assets/images/sanjiv-logo-transparent.png" alt="Sanjiv">
+      </a>
+      <!-- Logo End -->
+      <ul class="navbar-nav-wrapper">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">What I Do</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonial">Client</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="getintouch-wrapper ">
+        <a href="#co" class=" contact-btn">Get in Touch</a>
       </div>
-    </nav>
+
+    </div>
     <!-- Navbar End -->
+    </div>
   </header>
   <!-- Header End -->
 
+  <!-- header for samll device start-->
+  <header class="header--sm header-sticky">
+    <div class="header__wrapper">
+      <!-- Logo -->
+      <a class="logo-sm__link" href="index.html" title="sanjiv">
+        <img src="./assets/images/sanjiv-logo-transparent.png" alt="Sanjiv">
+      </a>
+
+      <a href="#offcanvasRight" role="button" class="btn offcanvas-link" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon class="nav-icon__sm"
+          icon="fluent:navigation-16-regular"></iconify-icon></a>
+
+      <div class="offcanvas offcanvas-end offcanvas-content__wrapper" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset header-button" data-bs-dismiss="offcanvas"
+            aria-label="Close">
+            <iconify-icon icon="majesticons:close" class="cross-icon"></iconify-icon>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="offcanvas-content__wrapper">
+
+            <div class="offcanvas-profile">
+              <a class="profile-link" href="index.html">
+                <img src="./assets/images/banner-image(1).jpg" alt="Sanjiv">
+              </a>
+              <h6 class="name-title">Sanjiv Thakur</h6>
+              <p class="sub-name__title">Front-End Developer</p>
+            </div>
+            <!-- offcanvas-content__wrapper -->
+            <ul class="sm-nav-wrapper">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">What I Do</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonial">Client</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <!--  offcanvas footer section -->
+            <ul class="sm-social__media">
+              <li class="social-media_list">
+                <a href="https://facebook.com" target="_blank" class="social-media_link">
+                  <iconify-icon icon="la:facebook-f" class="media-icon"></iconify-icon>
+                </a>
+              </li>
+              <li class="social-media_list">
+                <a href="https://twitter.com" target="_blank" class="social-media_link">
+                  <iconify-icon icon="ri:twitter-fill" class="media-icon"></iconify-icon>
+                </a>
+              </li>
+              <li class="social-media_list">
+                <a href="https://linkedin.com" target="_blank" class="social-media_link">
+                  <iconify-icon icon="formkit:linkedin" class="media-icon"></iconify-icon>
+                </a>
+              </li>
+              <li class="social-media_list">
+                <a href="https://github.com" target="_blank" class="social-media_link">
+                  <iconify-icon icon="mingcute:github-fill" class="media-icon"></iconify-icon>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- Logo End -->
+    </div>
+  </header>
+  <!-- header for samll device end-->
+
   <!-- Banner Section start -->
-  <section class="banner-section__wrapper">
+  <section class="banner-section__wrapper" id="home">
     <div class="hero">
       <div class="hero-bg"></div>
 
@@ -119,8 +187,8 @@
   <!-- Banner section End -->
 
   <!-- About section start -->
-  <div class="about-content">
-    <div class="container section-padding">
+  <div class="about-content section-padding">
+    <div class="container">
       <!-- contact Title Start -->
       <div class="about-title">
         <h2>
@@ -243,7 +311,7 @@
   <!-- About section end -->
 
   <!-- Resume section start -->
-  <section class="resume-section__wrapper">
+  <section class="resume-section__wrapper section-padding">
     <div class="container">
       <!--Resume Title Start -->
       <div class="resume-title mb-5">
@@ -255,7 +323,7 @@
       </div>
       <!-- Resume Title End -->
 
-      <div class="row gx-5">
+      <div class="row g-4 g-md-5">
         <div class="col-md-6 education-wrapper">
           <h2 class="education-title">My Education</h2>
           <div class="background-container">
@@ -387,7 +455,7 @@
   <!-- Resume section End -->
 
   <!--Project section start  -->
-  <section class="project-section__wrapper">
+  <section class="project-section__wrapper section-padding">
     <div class="container">
       <div class="Project--title">
         <h2>My
@@ -396,9 +464,9 @@
         <span class="title-bg">Portfolio</span>
       </div>
       <div class="service-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nesciunt
-          quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
-          natus, pariatur, eligendi mollitia.</p>
+        <p>I have designed multiple frontend projects using modern UI and responsive layouts,
+          Each project focuses on clean structure, smooth interaction, and usability,
+          These projects showcase my skills in real-world website design.</p>
       </div>
       <div class="portfolio-filter__wrapper">
         <div class="portfolio-filter">
@@ -506,7 +574,7 @@
           quidem velit, magni distinctio quod. Voluptate, eum porro autem veritatis eaque iure odio nam qui consequuntur
           natus, pariatur, eligendi mollitia.</p>
       </div>
-      <div class="row g-5 feature-box__wrapper">
+      <div class="row g-4 g-md-5 feature-box__wrapper">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="feature-box">
             <div class="icon-box__wrapper">
@@ -514,9 +582,8 @@
             </div>
             <div class="feature-content">
               <h5 class="feature-title">Web Design</h5>
-              <p class="feature-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vitae maiores
-                amet fuga molestiae perferendis architecto similique alias. Voluptates iusto eligendi in molestiae neque
-                atque perspiciatis incidunt doloremque facere voluptate.</p>
+              <p class="feature-content"> I design modern, responsive, and user-friendly websites that help businesses
+                and individuals establish a strong online presence.</p>
               <div class="read-more">
                 <button type="button" class="btn read-more__btn" data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop">
@@ -585,6 +652,332 @@
             </div>
           </div>
         </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="icon-box__wrapper">
+              <iconify-icon icon="fluent:document-javascript-16-regular" class="box-icon"></iconify-icon>
+            </div>
+            <div class="feature-content">
+              <h5 class="feature-title">JavaScript</h5>
+              <p class="feature-content">I build modern, responsive, and interactive web interfaces using JavaScript
+                that improve user experience and help businesses and individuals create a strong online presence.</p>
+              <div class="read-more">
+                <button type="button" class="btn read-more__btn" data-bs-toggle="modal" data-bs-target="#service-js">
+                  Read more
+                  <iconify-icon icon="lineicons:arrow-right-circle" class="read-more__icon">
+                  </iconify-icon>
+                </button>
+
+                <!-- Modal start-->
+                <div class="modal fade" id="service-js" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">JavaScript</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="model-service__content">
+                          <!-- Image / Illustration Section -->
+                          <div class="model-service__imgbox">
+                            <img src="./assets/images/service-2.jpg" alt="Web Design Illustration">
+                          </div>
+
+                          <!-- Text Content Section -->
+                          <div class="service-text">
+                            <p class="intro">
+                              I build modern, responsive, and interactive web interfaces using JavaScript that improve
+                              user experience and help businesses and individuals create a strong online presence.
+                            </p>
+
+                            <div class="features">
+                              <h3>What I Offer:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Interactive UI Development – Smooth interactions, sliders, modals,
+                                  tabs, and animations</li>
+                                <li class="list">Dynamic Content Handling – Update content without page reload using
+                                  JavaScript</li>
+                                <li class="list">Custom UI & UX Logic – User-friendly behavior and clean interaction
+                                  flow</li>
+                                <li class="list">Form Validation & User Input Handling – Error-free and secure input
+                                  experience</li>
+                                <li class="list">API Integration – Fetch and display real-time data from REST APIs</li>
+                                <li class="list">Fast Loading Performance – Optimized JavaScript for better speed</li>
+                                <li class="list">Cross-Browser Compatibility – Works perfectly on Chrome, Firefox, Edge,
+                                  and Safari</li>
+                                <li class="list">Modern JavaScript (ES6+) – Clean, maintainable, and scalable code</li>
+                              </ul>
+                            </div>
+
+                            <div class="features">
+                              <h3>Types of Websites I Design:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Interactive Personal Portfolios</li>
+                                <li class="list">Business / Company Websites</li>
+                                <li class="list">Dynamic Landing Pages</li>
+                                <li class="list">Blogs with JavaScript Features</li>
+                                <li class="list">Simple E-commerce UI (Cart, Filters, UI Logic)</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="icon-box__wrapper">
+              <iconify-icon icon="akar-icons:react-fill" class="box-icon"></iconify-icon>
+            </div>
+            <div class="feature-content">
+              <h5 class="feature-title">React.js</h5>
+              <p class="feature-content">I build modern, scalable, and high-performance web applications using React.js
+                that deliver smooth user experiences and help businesses grow online.</p>
+              <div class="read-more">
+                <button type="button" class="btn read-more__btn" data-bs-toggle="modal"
+                  data-bs-target="#service-reactjs">
+                  Read more
+                  <iconify-icon icon="lineicons:arrow-right-circle" class="read-more__icon">
+                  </iconify-icon>
+                </button>
+
+                <!-- Modal start-->
+                <div class="modal fade" id="service-reactjs" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">React.js</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="model-service__content">
+                          <!-- Image / Illustration Section -->
+                          <div class="model-service__imgbox">
+                            <img src="./assets/images/service-3.jpg" alt="Web Design Illustration">
+                          </div>
+
+                          <!-- Text Content Section -->
+                          <div class="service-text">
+                            <p class="intro">
+                              I build modern, scalable, and high-performance web applications using React.js that
+                              deliver smooth user experiences and help businesses grow online.
+                            </p>
+
+                            <div class="features">
+                              <h3>What I Offer:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Component-Based UI Development – Reusable and maintainable React
+                                  components</li>
+                                <li class="list">Responsive Design – Works perfectly on all screen sizes</li>
+                                <li class="list">Custom UI & UX Design – Clean layouts with smooth user flow</li>
+                                <li class="list">State Management – Efficient data handling using React hooks</li>
+                                <li class="list">API Integration – Connect frontend with REST APIs for dynamic content
+                                </li>
+                                <li class="list">Fast Performance – Optimized rendering for quick loading</li>
+                                <li class="list">Cross-Browser Compatibility – Chrome, Firefox, Edge, Safari</li>
+                                <li class="list">Modern React (Hooks & ES6+) – Clean, scalable, and future-ready code
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="features">
+                              <h3>Types of Websites I Design:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Interactive Personal Portfolios</li>
+                                <li class="list">Business / Company Websites</li>
+                                <li class="list">Dynamic Landing Pages</li>
+                                <li class="list">Blogs with JavaScript Features</li>
+                                <li class="list">Simple E-commerce UI (Cart, Filters, UI Logic)</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="icon-box__wrapper">
+              <iconify-icon icon="mdi:code-block-html" class="box-icon"></iconify-icon>
+            </div>
+            <div class="feature-content">
+              <h5 class="feature-title">HTML & CSS3 (SASS, Tailwind CSS)</h5>
+              <p class="feature-content">I design modern, responsive, and visually appealing websites using HTML and CSS
+                that help businesses and individuals build a strong and professional online presence.</p>
+              <div class="read-more">
+                <button type="button" class="btn read-more__btn" data-bs-toggle="modal"
+                  data-bs-target="#service--html-css">
+                  Read more
+                  <iconify-icon icon="lineicons:arrow-right-circle" class="read-more__icon">
+                  </iconify-icon>
+                </button>
+
+                <!-- Modal start-->
+                <div class="modal fade" id="service--html-css" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">HTML & CSS3 (SASS, Tailwind CSS)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="model-service__content">
+                          <!-- Image / Illustration Section -->
+                          <div class="model-service__imgbox">
+                            <img src="./assets/images/service-4.jpg" alt="Web Design Illustration">
+                          </div>
+
+                          <!-- Text Content Section -->
+                          <div class="service-text">
+                            <p class="intro">
+                              I design modern, responsive, and visually appealing websites using HTML and CSS that help
+                              businesses and individuals build a strong and professional online presence.
+                            </p>
+
+                            <div class="features">
+                              <h3>What I Offer:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Responsive Design – Mobile-first layouts that work on all devices</li>
+                                <li class="list">Custom UI & UX Design – Clean, modern, and user-friendly interfaces
+                                </li>
+                                <li class="list">HTML5 & CSS3 – Well-structured, semantic, and maintainable code</li>
+                                <li class="list">SASS (SCSS) – Modular, reusable, and scalable styling</li>
+                                <li class="list">Tailwind CSS – Utility-first CSS for fast and consistent UI development
+                                </li>
+                                <li class="list">SEO-Friendly Structure – Clean markup for better search visibility</li>
+                                <li class="list">Fast Loading Speed – Optimized CSS and lightweight layouts</li>
+                                <li class="list">Cross-Browser Compatibility – Chrome, Firefox, Edge, Safari</li>
+                              </ul>
+                            </div>
+
+                            <div class="features">
+                              <h3>Types of Websites I Design:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Interactive Personal Portfolios</li>
+                                <li class="list">Business / Company Websites</li>
+                                <li class="list">Dynamic Landing Pages</li>
+                                <li class="list">Blogs with JavaScript Features</li>
+                                <li class="list">Simple E-commerce UI (Cart, Filters, UI Logic)</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-box">
+            <div class="icon-box__wrapper">
+              <iconify-icon icon="bi:bootstrap" class="box-icon"></iconify-icon>
+            </div>
+            <div class="feature-content">
+              <h5 class="feature-title">Bootstrap 5</h5>
+              <p class="feature-content">I design modern, responsive, and mobile-first websites using Bootstrap 5 that
+                help businesses and individuals build a strong and professional online presence</p>
+              <div class="read-more">
+                <button type="button" class="btn read-more__btn" data-bs-toggle="modal"
+                  data-bs-target="#service-bootstrap">
+                  Read more
+                  <iconify-icon icon="lineicons:arrow-right-circle" class="read-more__icon">
+                  </iconify-icon>
+                </button>
+
+                <!-- Modal start-->
+                <div class="modal fade" id="service-bootstrap" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Bootstrap 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="model-service__content">
+                          <!-- Image / Illustration Section -->
+                          <div class="model-service__imgbox">
+                            <img src="./assets/images/service-5.jpg" alt="Web Design Illustration">
+                          </div>
+
+                          <!-- Text Content Section -->
+                          <div class="service-text">
+                            <p class="intro">
+                              I design modern, responsive, and mobile-first websites using Bootstrap 5 that help
+                              businesses and individuals build a strong and professional online presence
+                            </p>
+
+                            <div class="features">
+                              <h3>What I Offer:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Mobile-First Responsive Design – Works smoothly on all screen sizes
+                                </li>
+                                <li class="list">Bootstrap 5 Grid System – Clean, flexible, and structured layouts</li>
+                                <li class="list">Custom UI Components – Buttons, cards, modals, navbars, forms</li>
+                                <li class="list">Fast Development – Ready-to-use components for quick delivery</li>
+                                <li class="list">Clean & Reusable Code – Well-structured and easy to maintain</li>
+                                <li class="list">Cross-Browser Compatibility – Chrome, Firefox, Edge, Safari</li>
+                                <li class="list">Optimized Performance – Lightweight and efficient UI</li>
+                                <li class="list">Modern Design Standards – Clean and professional look</li>
+                              </ul>
+                            </div>
+
+                            <div class="features">
+                              <h3>Types of Websites I Design:</h3>
+                              <ul class="list-wrapper">
+                                <li class="list">Interactive Personal Portfolios</li>
+                                <li class="list">Business / Company Websites</li>
+                                <li class="list">Landing Pages</li>
+                                <li class="list">Blogs & Informational Websites</li>
+                                <li class="list">Simple E-commerce UI (Cart, Filters, UI Logic)</li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal end-->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- service title end -->
     </div>
@@ -592,180 +985,785 @@
   <!-- service End -->
 
   <!-- Blog content stat -->
-  <div class="blog-page-section">
-    <!-- Page Title Start -->
-    <div class="blog-title">
-      <h2>
-        my
-        <span>blog</span>
-      </h2>
-      <span class="title-bg">posts</span>
-    </div>
-    <!-- Page Title End -->
+  <section class="blog-page-section section-padding" id="blog">
+    <div class="container">
+      <!-- Page Title Start -->
+      <div class="blog-title">
+        <h2>
+          my
+          <span>blog</span>
+        </h2>
+        <span class="title-bg">posts</span>
+      </div>
+      <!-- Page Title End -->
 
-    <div class="blog-list-wrapper">
-      <div class="container">
-        <div class="row g-4">
+      <div class="blog-list-wrapper">
+        <div class="row g-4 g-md-5">
 
           <div class="col-12 col-sm-6 col-lg-4">
             <div class="blog__card">
-
-              <div class="image-post-wraper">
-                <a href="#" class="img-wrapper">
-                  <img src="./assets/images/blog-post-1.jpg" alt="blog-image">
-                </a>
-              </div>
+              <a href="#" class="img-wrapper">
+                <img src="./assets/images/web-design(4).jpg" alt="blog-image">
+              </a>
 
               <div class="blog-content">
 
-                <div class="entry-header">
-                  <h3>
-                    <a href="#">
-                      How to Own Your Audience by Creating an Email List
-                    </a>
-                  </h3>
-                </div>
-
-                <div class="entry-content">
-                  <p class="text-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptas numquam eos cum! Fugit, obcaecati molestias! Dolor rerum id...
-                  </p>
-                </div>
-
+                <h3 class="entry-header">
+                  <a href="#" role="button" class="btn" data-bs-toggle="modal" data-bs-target="#webdesign-article">
+                    Web Design: Making Websites Easy and Friendly
+                  </a>
+                </h3>
+                <p class="entry-content">
+                  In today’s digital world, a website is often the first place where people
+                  learn about a person, business, or brand. Because of this, web design is
+                  very important. Web design is not only about making a website look good,
+                  but also about making it easy to use.
+                </p>
               </div>
+            </div>
 
+            <!--Blog Modal -->
+            <div class="modal fade" id="webdesign-article" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Web Design</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <article class="blog__article">
+
+                      <!-- Title -->
+                      <h1 class="article--title">Web Design: Making Websites Easy and Friendly</h1>
+
+                      <!-- Banner Image -->
+                      <div class="article-banner__wrapper">
+                        <img src="./assets/images/web-design(1).jpg" class="article-banner" alt="Web Design Banner">
+                      </div>
+
+                      <!-- Introduction -->
+                      <p class="article-intro">
+                        In today’s digital world, a website is often the first place where people
+                        learn about a person, business, or brand. Because of this, web design is
+                        very important. Web design is not only about making a website look good,
+                        but also about making it easy to use.
+                      </p>
+
+                      <!-- What is Web Design -->
+                      <h2 class="article-sub__headding">What Is Web Design?</h2>
+
+                      <p class="article-sub_content">
+                        Web design means planning, creating, and improving websites. It includes
+                        choosing colors, fonts, layouts, and images. Good web design helps users
+                        feel comfortable while using a website.
+                      </p>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Easy to use</li>
+                        <li class="article-list">Clean and simple look</li>
+                        <li class="article-list">Clear information</li>
+                      </ul>
+
+                      <!-- Importance -->
+                      <h2 class="article-sub__headding">Why Good Web Design Is Important</h2>
+
+                      <h3 class="article-mini_heading">1. First Impression</h3>
+                      <p class="article-sub_content">
+                        People decide very quickly if they like a website. A clean design creates
+                        trust, while a messy design can make users leave.
+                      </p>
+
+                      <h3 class="article-mini_heading">2. Easy to Use</h3>
+                      <p class="article-sub_content">
+                        Clear menus and readable text help users move through the website without
+                        confusion.
+                      </p>
+
+                      <h3 class="article-mini_heading">3. Mobile Friendly</h3>
+                      <p class="article-sub_content">
+                        Most people use mobile phones. A good website should work well on all
+                        devices.
+                      </p>
+
+                      <!-- Main Parts -->
+                      <h2 class="article-sub__headding">Main Parts of Web Design</h2>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Layout</h3>
+                        <p class="article-sub_content">
+                          Layout shows how content is placed on a page. A good layout makes reading
+                          easy.
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Colors and Fonts</h3>
+                        <p class="article-sub_content">
+                          Colors show mood and fonts should be easy to read. Using the same style
+                          makes the website look professional.
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Navigation</h3>
+                        <p class="article-sub_content">
+                          Navigation helps users move from one page to another easily.
+                        </p>
+                      </div>
+
+                      <!-- Conclusion -->
+
+                      <h2 class="article-sub__headding">Conclusion</h2>
+                      <p class="article-sub_content">
+                        Web design is about making websites simple, fast, and easy to use.
+                        A good website helps users and builds trust. Keeping things clear and
+                        simple always gives better results.
+                      </p>
+
+                    </article>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 ">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="blog__card">
-
-              <div class="image-post-wraper">
-                <a href="#" class="img-wrapper">
-                  <img src="./assets/images/blog-post-1.jpg" alt="blog-image">
-                </a>
-              </div>
+              <a href="#" class="img-wrapper">
+                <img src="./assets/images/javascript-blog(2).png" alt="blog-image">
+              </a>
 
               <div class="blog-content">
 
-                <div class="entry-header">
-                  <h3>
-                    <a href="#">
-                      How to Own Your Audience by Creating an Email List
-                    </a>
-                  </h3>
-                </div>
-
-                <div class="entry-content">
-                  <p class="text-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptas numquam eos cum! Fugit, obcaecati molestias! Dolor rerum id...
-                  </p>
-                </div>
-
+                <h3 class="entry-header">
+                  <a href="#" role="button" class="btn" data-bs-toggle="modal" data-bs-target="#javascrip-article">
+                    JavaScript: Making Websites Interactive and Alive
+                  </a>
+                </h3>
+                <p class="entry-content">
+                  JavaScript is one of the most important languages in web development. It helps make websites
+                  interactive and fun to use. Without JavaScript, most websites would look static and boring.
+                </p>
               </div>
+            </div>
 
+            <!--Blog Modal -->
+            <div class="modal fade" id="javascrip-article" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Java Script</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <article class="blog__article">
+
+                      <!-- Title -->
+                      <h1 class="article--title">JavaScript: Making Websites Interactive and Alive</h1>
+
+                      <!-- Banner Image -->
+                      <div class="article-banner__wrapper">
+                        <img src="./assets/images/javascript-blog.png" class="article-banner" alt="Web Design Banner">
+                      </div>
+
+                      <!-- Introduction -->
+                      <p class="article-intro">
+                        JavaScript is one of the most important languages in web development. It helps make websites
+                        interactive and fun to use. Without JavaScript, most websites would look static and boring.
+
+                        In simple words, JavaScript allows a website to respond when users click buttons, fill forms,
+                        scroll pages, or interact with content..
+                      </p>
+
+                      <h2 class="article-sub__headding">What Is JavaScript?</h2>
+
+                      <p class="article-sub_content">
+                        JavaScript is a programming language used mainly in web browsers. It works together with HTML
+                        and CSS
+                      </p>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">HTML gives structure to a website</li>
+                        <li class="article-list">CSS controls design and style</li>
+                        <li class="article-list">JavaScript adds action and interaction</li>
+                      </ul>
+
+                      <!-- Importance -->
+                      <h2 class="article-sub__headding">Why JavaScript Is Important</h2>
+
+                      <h3 class="article-mini_heading">1. Makes Websites Interactive</h3>
+                      <p class="article-sub_content">
+                        JavaScript allows websites to react to user actions like clicks, typing, and scrolling. For
+                        example, showing a popup, opening a menu, or validating a form..
+                      </p>
+
+                      <h3 class="article-mini_heading">2. Improves User Experience</h3>
+                      <p class="article-sub_content">
+                        With JavaScript, websites feel smooth and friendly. It helps load content faster and gives
+                        instant feedback to users
+                      </p>
+
+                      <h3 class="article-mini_heading">3. Used Everywhere</h3>
+                      <p class="article-sub_content">
+                        JavaScript is not only for websites. It is also used in mobile apps, servers, games, and desktop
+                        applications.
+                      </p>
+
+                      <!-- Main Parts -->
+                      <h2 class="article-sub__headding">Basic JavaScript Concepts</h2>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Variables</h3>
+                        <p class="article-sub_content">
+                          Variables store data like numbers, text, or values that can change.
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Functions</h3>
+                        <p class="article-sub_content">
+                          Functions are blocks of code that perform a task when called
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Events</h3>
+                        <p class="article-sub_content">
+                          Events happen when users interact with a page, such as clicking a button or moving the mouse.
+                        </p>
+                      </div>
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Conditions</h3>
+                        <p class="article-sub_content">
+                          Conditions help JavaScript make decisions, like running code only when something is true
+                        </p>
+                      </div>
+
+                      <!-- Conclusion -->
+
+                      <h2 class="article-sub__headding">Conclusion</h2>
+                      <p class="article-sub_content">
+                        JavaScript plays a key role in modern web development. It turns simple websites into interactive
+                        and dynamic experiences.
+
+                        If you want to become a web developer, learning JavaScript is a must. Start with the basics,
+                        practice regularly, and build small projects to grow your skills.
+                      </p>
+
+                    </article>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 ">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="blog__card">
-
-              <div class="image-post-wraper">
-                <a href="#" class="img-wrapper">
-                  <img src="./assets/images/blog-post-1.jpg" alt="blog-image">
-                </a>
-              </div>
+              <a href="#" class="img-wrapper">
+                <img src="./assets/images/react-blog.jpg" alt="blog-image">
+              </a>
 
               <div class="blog-content">
 
-                <div class="entry-header">
-                  <h3>
-                    <a href="#">
-                      How to Own Your Audience by Creating an Email List
-                    </a>
-                  </h3>
-                </div>
-
-                <div class="entry-content">
-                  <p class="text-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptas numquam eos cum! Fugit, obcaecati molestias! Dolor rerum id...
-                  </p>
-                </div>
-
+                <h3 class="entry-header">
+                  <a href="#" role="button" class="btn" data-bs-toggle="modal" data-bs-target="#react-article">
+                    React.js: Building Fast and Simple User Interfaces
+                  </a>
+                </h3>
+                <p class="entry-content">
+                  React.js is a popular JavaScript library used to build modern websites and web applications. It helps
+                  developers create fast, smooth, and interactive user interfaces. Many well-known websites use React
+                  because it makes development easier and more organized.
+                </p>
               </div>
+            </div>
 
+            <!--Blog Modal -->
+            <div class="modal fade" id="react-article" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">React</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <article class="blog__article">
+
+                      <!-- Title -->
+                      <h1 class="article--title">React.js: Building Fast and Simple User Interfaces</h1>
+
+                      <!-- Banner Image -->
+                      <div class="article-banner__wrapper">
+                        <img src="./assets/images/react-blog.jpg" class="article-banner" alt="Web Design Banner">
+                      </div>
+
+                      <!-- Introduction -->
+                      <p class="article-intro">
+                        React.js is a popular JavaScript library used to build modern websites and web applications. It
+                        helps developers create fast, smooth, and interactive user interfaces. Many well-known websites
+                        use React because it makes development easier and more organized.
+
+                        In simple words, React helps you build website parts that update quickly when data changes.
+                      </p>
+
+                      <h2 class="article-sub__headding">What Is React.js?</h2>
+
+                      <p class="article-sub_content">
+                        React.js is a JavaScript library created by Facebook. It is mainly used to build the front part
+                        of a website, which users see and interact with.
+
+                        React works with components. Components are small parts of a website, like buttons, headers,
+                        forms, or cards. These parts can be reused again and again
+                      </p>
+
+                      <!-- Importance -->
+                      <h2 class="article-sub__headding">Why React.js Is Important</h2>
+
+                      <h3 class="article-mini_heading">1. Fast Performance</h3>
+                      <p class="article-sub_content">
+                        React updates only the parts of the page that change. This makes websites faster and smoother
+                        for users.
+                      </p>
+
+                      <h3 class="article-mini_heading">2. Reusable Components</h3>
+                      <p class="article-sub_content">
+                        With React, you can create one component and use it many times. This saves time and keeps code
+                        clean.
+                      </p>
+
+                      <h3 class="article-mini_heading">3. Easy to Manage</h3>
+                      <p class="article-sub_content">
+                        React makes it easier to manage large websites by breaking them into small, simple parts.
+                      </p>
+                      <h3 class="article-mini_heading">4. Strong Community</h3>
+                      <p class="article-sub_content">
+                        React has a large community. There are many tutorials, videos, and tools available to help
+                        beginners learn quickly.
+                      </p>
+
+                      <!-- Main Parts -->
+                      <h2 class="article-sub__headding">Basic React Concepts</h2>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Components</h3>
+                        <p class="article-sub_content">
+                          Components are small building blocks of a website. Each component handles its own part of the
+                          screen
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Props</h3>
+                        <p class="article-sub_content">
+                          Props are used to pass data from one component to another
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">State</h3>
+                        <p class="article-sub_content">
+                          State stores data that can change over time, like user input or button clicks
+                        </p>
+                      </div>
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Hooks</h3>
+                        <p class="article-sub_content">
+                          Hooks help use features like state and effects in a simple way.
+                        </p>
+                      </div>
+
+                      <!-- Conclusion -->
+
+                      <h2 class="article-sub__headding">React.js vs Plain JavaScript</h2>
+                      <p class="article-sub_content">
+                        React makes it easier to build and manage large projects compared to plain JavaScript. It helps
+                        organize code and improves performance
+                      </p>
+                      <h2 class="article-sub__headding">Conclusion</h2>
+                      <p class="article-sub_content">
+                        React.js is a powerful and beginner-friendly tool for building modern websites. It helps create
+                        fast, clean, and interactive user interfaces.
+
+                        If you want to grow as a front-end developer, learning React.js is a smart step. Start with
+                        basics, practice daily, and build small projects to improve your skills.
+                      </p>
+
+                    </article>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 ">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="blog__card">
-
-              <div class="image-post-wraper">
-                <a href="#" class="img-wrapper">
-                  <img src="./assets/images/blog-post-1.jpg" alt="blog-image">
-                </a>
-              </div>
+              <a href="#" class="img-wrapper">
+                <img src="./assets/images/frontend-blog.jpeg" alt="blog-image">
+              </a>
 
               <div class="blog-content">
 
-                <div class="entry-header">
-                  <h3>
-                    <a href="#">
-                      How to Own Your Audience by Creating an Email List
-                    </a>
-                  </h3>
-                </div>
-
-                <div class="entry-content">
-                  <p class="text-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptas numquam eos cum! Fugit, obcaecati molestias! Dolor rerum id...
-                  </p>
-                </div>
-
+                <h3 class="entry-header">
+                  <a href="#" role="button" class="btn" data-bs-toggle="modal" data-bs-target="#frontend-article">
+                    Frontend Technologies: HTML, CSS3, Tailwind, SASS, and Bootstrap
+                  </a>
+                </h3>
+                <p class="entry-content">
+                  Frontend development is about creating the part of a website that users see and use. It focuses on
+                  design, layout, and user experience. To build modern and good-looking websites, developers use tools
+                  like HTML, CSS3, Tailwind CSS, SASS, and Bootstrap.
+                </p>
               </div>
+            </div>
 
+            <!--Blog Modal -->
+            <div class="modal fade" id="frontend-article" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Frontend Technologies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <article class="blog__article">
+
+                      <!-- Title -->
+                      <h1 class="article--title">Frontend Technologies: HTML, CSS3, Tailwind, SASS, and Bootstrap</h1>
+
+                      <!-- Banner Image -->
+                      <div class="article-banner__wrapper">
+                        <img src="./assets/images/frontend-blog.jpeg" class="article-banner" alt="Web Design Banner">
+                      </div>
+
+                      <!-- Introduction -->
+                      <p class="article-intro">
+                        Frontend development is about creating the part of a website that users see and use. It focuses
+                        on design, layout, and user experience. To build modern and good-looking websites, developers
+                        use tools like HTML, CSS3, Tailwind CSS, SASS, and Bootstrap.
+
+                        This blog explains these technologies in very simple and easy language.
+                      </p>
+
+                      <h2 class="article-sub__headding">HTML: Structure of a Website</h2>
+
+                      <p class="article-sub_content">
+                        HTML stands for HyperText Markup Language. It is the basic building block of every website. HTML
+                        is used to create the structure of a web page.
+
+                        With HTML, we create headings, paragraphs, images, links, buttons, and forms. Without HTML, a
+                        website cannot exist.
+                      </p>
+
+                      <h3 class="article-mini_heading">Example uses of HTML:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Page headings and text</li>
+                        <li class="article-list">Images and videos</li>
+                        <li class="article-list">Forms and input fields</li>
+                        <li class="article-list">Links and buttons</li>
+                      </ul>
+
+                      <h2 class="article-sub__headding">CSS3: Styling the Website</h2>
+
+                      <p class="article-sub_content">
+                        CSS3 is used to style HTML content. It controls colors, fonts, spacing, layout, and animations.
+                        CSS3 helps make websites beautiful and readable.
+
+                        CSS3 also helps create responsive designs so websites work well on mobile, tablet, and desktop
+                        screens.
+                      </p>
+
+                      <h3 class="article-mini_heading">CSS3 is used for:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Colors and fonts</li>
+                        <li class="article-list">Page layout</li>
+                        <li class="article-list">Animations and transitions</li>
+                        <li class="article-list">Responsive design</li>
+                      </ul>
+
+                      <h2 class="article-sub__headding">SASS: Better Way to Write CSS</h2>
+
+                      <p class="article-sub_content">
+                        SASS is a CSS preprocessor. It helps write CSS in a cleaner and more organized way. SASS allows
+                        nesting, reuse of styles, and better file management.
+
+                        SASS makes large projects easier to manage and saves time.
+                      </p>
+
+                      <h3 class="article-mini_heading">Why developers like SASS:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Cleaner code</li>
+                        <li class="article-list">Easy maintenance</li>
+                        <li class="article-list">Better structure</li>
+                        <li class="article-list">Faster development</li>
+                      </ul>
+
+                      <h2 class="article-sub__headding">Tailwind CSS: Utility-First Styling</h2>
+
+                      <p class="article-sub_content">
+                        Tailwind CSS is a modern CSS framework. It uses small utility classes to style elements directly
+                        in HTML.
+
+                        With Tailwind, developers can build designs quickly without writing custom CSS. It is very
+                        popular for modern websites..
+                      </p>
+
+                      <h3 class="article-mini_heading">Benefits of Tailwind CSS:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Fast development</li>
+                        <li class="article-list">Consistent design</li>
+                        <li class="article-list">No need to write much CSS</li>
+                        <li class="article-list">Easy responsive design</li>
+                      </ul>
+
+                      <h2 class="article-sub__headding">Bootstrap: Ready-Made Components</h2>
+
+                      <p class="article-sub_content">
+                        Bootstrap is a popular CSS framework that provides ready-made components. It helps build
+                        responsive websites quickly.
+
+                        Bootstrap includes buttons, cards, forms, navigation bars, and grid systems.
+                      </p>
+
+                      <h3 class="article-mini_heading">Bootstrap is useful for:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Fast website layout</li>
+                        <li class="article-list">Responsive design</li>
+                        <li class="article-list">Pre-built UI components</li>
+                        <li class="article-list">Beginners learning frontend</li>
+                      </ul>
+
+                      <h2 class="article-sub__headding">How These Technologies Work Together</h2>
+                      <h3 class="article-mini_heading">These tools are often used together:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">HTML creates structure</li>
+                        <li class="article-list">CSS3 styles the website</li>
+                        <li class="article-list">SASS organizes CSS</li>
+                        <li class="article-list">Tailwind or Bootstrap speeds up design</li>
+                      </ul>
+                      <p class="article-sub_content">Choosing the right tool depends on the project and developer
+                        preference.</p>
+
+
+                      <!-- Conclusion -->
+                      <h2 class="article-sub__headding">Conclusion</h2>
+                      <p class="article-sub_content">
+                        HTML, CSS3, SASS, Tailwind CSS, and Bootstrap are important frontend technologies. They help
+                        create clean, responsive, and user-friendly websites.
+
+                        Learning these tools step by step will help you become a strong frontend developer. Start with
+                        HTML and CSS, then move to SASS, Tailwind, or Bootstrap based on your needs.
+                      </p>
+
+                    </article>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4 ">
+          <div class="col-12 col-sm-6 col-lg-4">
             <div class="blog__card">
-
-              <div class="image-post-wraper">
-                <a href="#" class="img-wrapper">
-                  <img src="./assets/images/blog-post-1.jpg" alt="blog-image">
-                </a>
-              </div>
+              <a href="#" class="img-wrapper">
+                <img src="./assets/images/git-github-blog.jpg" alt="blog-image">
+              </a>
 
               <div class="blog-content">
 
-                <div class="entry-header">
-                  <h3>
-                    <a href="#">
-                      How to Own Your Audience by Creating an Email List
-                    </a>
-                  </h3>
-                </div>
-
-                <div class="entry-content">
-                  <p class="text-content">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Voluptas numquam eos cum! Fugit, obcaecati molestias! Dolor rerum id...
-                  </p>
-                </div>
-
+                <h3 class="entry-header">
+                  <a href="#" role="button" class="btn" data-bs-toggle="modal" data-bs-target="#github-article">
+                    Git and GitHub: Simple Tools to Manage Code
+                  </a>
+                </h3>
+                <p class="entry-content">
+                  Git and GitHub are very important tools for developers. They help manage code, track changes, and work
+                  with others easily. Even beginners can learn Git and GitHub step by step without difficulty.
+                </p>
               </div>
+            </div>
 
+            <!--Blog Modal -->
+            <div class="modal fade" id="github-article" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Git And GitHub</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <article class="blog__article">
+
+                      <!-- Title -->
+                      <h1 class="article--title">Git and GitHub: Simple Tools to Manage Code</h1>
+
+                      <!-- Banner Image -->
+                      <div class="article-banner__wrapper">
+                        <img src="./assets/images/git-github-blog.jpg" class="article-banner" alt="Web Design Banner">
+                      </div>
+
+                      <!-- Introduction -->
+                      <p class="article-intro">
+                        Git and GitHub are very important tools for developers. They help manage code, track changes,
+                        and work with others easily. Even beginners can learn Git and GitHub step by step without
+                        difficulty.
+
+                        This blog explains Git and GitHub in very simple and human language.
+                      </p>
+
+                      <!-- What Is Git? -->
+                      <h2 class="article-sub__headding">What Is Git?</h2>
+
+                      <p class="article-sub_content">
+                        Git is a version control tool. It helps you save your work and track changes in your code over
+                        time.
+
+                        Think of Git like a save history for your project. If something goes wrong, you can go back to
+                        an older version of your code.
+                      </p>
+                      <h3 class="article-mini_heading">Git helps you:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Track code changes</li>
+                        <li class="article-list">Fix mistakes easily</li>
+                        <li class="article-list">Clear information</li>
+                        <li class="article-list">Manage different versions of code</li>
+                      </ul>
+
+                      <h2 class="article-sub__headding">Why Git Is Important</h2>
+
+                      <p class="article-sub_content">
+                        When working on a project, changes happen often. Git keeps a record of every change, so nothing
+                        is lost.
+                      </p>
+                      <h3 class="article-mini_heading">It is useful for:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Small personal projects</li>
+                        <li class="article-list">Large company projects</li>
+                        <li class="article-list">Team collaboration</li>
+                      </ul>
+
+                      <h2 class="article-sub__headding">What Is GitHub?</h2>
+
+                      <p class="article-sub_content">
+                        GitHub is an online platform that stores Git projects. It allows developers to upload their code
+                        to the internet and share it with others.
+
+                        GitHub is built on Git, but it adds features like project sharing, teamwork, and online backup
+                      </p>
+
+                      <h2 class="article-sub__headding">Why GitHub Is Important</h2>
+
+                      <h3 class="article-mini_heading">GitHub helps developers:</h3>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Store code online</li>
+                        <li class="article-list">Share projects with others</li>
+                        <li class="article-list">Work together as a team</li>
+                        <li class="article-list">Show projects in a portfolio</li>
+                      </ul>
+                      <p class="article-sub_content">Many companies use GitHub to manage their software projects.</p>
+
+                      <h2 class="article-sub__headding">Git vs GitHub (Simple Difference)</h2>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Git works on your computer and manages code versions</li>
+                        <li class="article-list">Share projects with others</li>
+                        <li class="article-list">GitHub is a website where Git projects are stored and shared</li>
+                      </ul>
+                      <p class="article-sub_content">Both are used together but they are not the same.</p>
+
+                      <h2 class="article-sub__headding">Common Uses of Git and GitHub</h2>
+
+                      <ul class="article-list_wrapper">
+                        <li class="article-list">Saving project history</li>
+                        <li class="article-list">Working with a team</li>
+                        <li class="article-list">Sharing open-source projects</li>
+                        <li class="article-list">Managing bugs and updates</li>
+                      </ul>
+
+                      <!-- Main Parts -->
+                      <h2 class="article-sub__headding">Basic Git Concepts</h2>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Repository</h3>
+                        <p class="article-sub_content">
+                          A repository is a folder where your project and its history are stored.
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Commit</h3>
+                        <p class="article-sub_content">
+                          A commit is a saved change in your project.
+                        </p>
+                      </div>
+
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Branch</h3>
+                        <p class="article-sub_content">
+                          A branch is a copy of your code where you can work without affecting the main project
+                        </p>
+                      </div>
+                      <div class="article-part">
+                        <h3 class="article-mini_heading">Push and Pull</h3>
+                        <ul class="article-list_wrapper">
+                          <li class="article-list">Push sends your code to GitHub</li>
+                          <li class="article-list">Pull brings code from GitHub to your computer</li>
+                        </ul>
+                      </div>
+
+                      <!-- Conclusion -->
+
+                      <h2 class="article-sub__headding">Conclusion</h2>
+                      <p class="article-sub_content">
+                        Git and GitHub make coding easier and safer. They help developers track work, fix mistakes, and
+                        collaborate with others.
+
+                        If you want to grow as a developer, learning Git and GitHub is a must. Start with the basics,
+                        practice daily, and use them in every project.
+                      </p>
+
+                    </article>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-  </div>
+  </section>
   <!-- Blog contetent end -->
 
   <!-- Testimonial section start -->
-  <section class="testimonial-section__wrapper section-padding">
+  <section class="testimonial-section__wrapper section-padding" id="testimonial">
     <div class="container">
       <div class="testimonial--title">
         <h2>Peer
@@ -830,8 +1828,8 @@
   <!-- Testimonial section end -->
 
   <!-- Contact section start -->
-  <section class="contact-section_wrapper">
-    <div class="container section-padding">
+  <section class="contact-section_wrapper section-padding" id="contact">
+    <div class="container">
       <!-- contact Title Start -->
       <div class="contact-title">
         <h2>
@@ -841,9 +1839,9 @@
         <span class="title-bg">Contact</span>
       </div>
       <!-- contact Title End -->
-      <div class="row gy-5 address-wrapper">
+      <div class="row g-4 g-md-5 address-wrapper">
         <!-- left side start -->
-        <div class="address-left col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+        <div class="address-left col-md-4 col-xl-3 order-0 order-md-0">
           <h3 class="address-title">Address</h3>
           <p class="local-address">
             Province No:-3, District:-Lalitpur,
@@ -851,7 +1849,7 @@
             Imadol (Mahalaxmi Municipality)
           </p>
           <p class="mail-address">
-            <iconify-icon icon="fluent:mail-all-read-28-filled" class="mail-icon"></iconify-icon>
+            <iconify-icon icon="fluent:mail-read-20-filled" class="mail-icon"></iconify-icon>
             <span class="label-mail">Mail me</span>
             hellosanjiv123@gmail.com
           </p>
@@ -886,7 +1884,7 @@
         <!-- address left side end -->
 
         <!-- address right side start -->
-        <div class="adddress-right col-md-8 col-xl-9 order-0 order-md-1">
+        <div class="adddress-right col-md-8 col-xl-9 order-0 order-md-0">
           <h3 class="address-title">Send us a note</h3>
 
           <!-- form section start -->
@@ -916,17 +1914,15 @@
   </section>
   <!-- Contact section End -->
 
-
   <!-- footer section start -->
   <footer class="footer__section-wrapper">
     <div class="footer__section-top">
       <div class="container">
         <div class="top-wrapper">
-          <div class="footer-image">
-            <a href="#">
-              <img src="./assets/images/sanjiv-logo-transparent.png" alt="footer img">
-            </a>
-          </div>
+          <a href="#" class="footer-image">
+            <img src="./assets/images/sanjiv-logo-transparent.png" alt="footer img">
+          </a>
+
           <div class="footer-social-link">
             <span class="follow-me">Follow Me</span>
             <ul class="social-media">

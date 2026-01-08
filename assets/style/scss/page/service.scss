@@ -18,14 +18,28 @@
         h2 {
             font-size: 56px;
             font-weight: 900;
-            color: #272626;
+            color: $black-800;
             text-transform: uppercase;
             margin: 0;
             padding: 0;
             line-height: 1.5;
 
             span {
-                color: #ffb400;
+                color: $light-primary-color;
+            }
+
+            @include mac {
+                font-size: $heading-font;
+            }
+
+            @include tablet {
+                font-size: $xxl-title-font;
+
+            }
+
+            @include mobile {
+                font-size: $md-title-font;
+                line-height: 1.2;
             }
         }
 
@@ -40,12 +54,25 @@
             letter-spacing: 10px;
             line-height: 0.7;
             text-transform: uppercase;
-
-            color: #dee3e4; // ✔ cleaned (removed unnecessary rgba + !important)
-            opacity: 0.35; // ✔ added for transparency effect
-
+            color: $black-400;
+            opacity: 0.35;
             z-index: -1;
             pointer-events: none;
+
+            @include mac {
+                font-size: 92px;
+                letter-spacing: 6px;
+            }
+
+            @include tablet {
+                font-size: 68px;
+                letter-spacing: 4px;
+            }
+
+            @include mobile {
+                font-size: 36px;
+                letter-spacing: 2px;
+            }
         }
     }
 
@@ -59,10 +86,14 @@
         .service-content {
             font-size: 16px;
             font-weight: 400;
-            color: #111;
+            color: $gray;
             line-height: 1.2;
             padding: 0;
             margin: 0;
+
+            @include mobile {
+                font-size: 15px;
+            }
         }
     }
 
@@ -71,10 +102,10 @@
 
         .feature-box {
             width: 100%;
-            padding: 35px 8px;
+            padding: 35px 48px;
             text-align: center;
             z-index: 1;
-            background: #dee3e4;
+            background: $black-200;
             border-radius: 5px;
             box-shadow: 0px 1px 27px -3px rgb(0, 0, 0, 0.2);
 
@@ -99,6 +130,12 @@
                     align-items: center;
                     justify-content: center;
                     text-align: center;
+
+                    @include mobile {
+                        width: 85px;
+                        height: 85px;
+                        font-size: 36px;
+                    }
                 }
             }
 
@@ -108,16 +145,30 @@
 
                 .feature-title {
                     font-size: 16px;
-                    color: #111;
+                    color: $black;
                     margin-bottom: 14px;
                     font-weight: 700;
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
                 }
 
                 .feature-content {
-                    font-size: 15px;
-                    color: $black-500;
+                    font-size: 16px;
+                    color: $gray;
                     font-weight: 400;
                     margin: 0 0 25px;
+                    font-weight: 400;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    color: #80828D;
+                    @include mobile{
+                        font-size: 15px;
+                    }
+
                 }
             }
 
@@ -133,24 +184,24 @@
                     font-weight: 600;
                     text-transform: uppercase;
                     line-height: 1.4;
-                    color: #111;
+                    color: $black;
                     text-decoration: none;
                     padding: 4px 6px;
                     transition: color 0.3s ease;
 
                     &:hover {
-                        color: #ffb400;
+                        color: $light-primary-color;
 
                         .read-more__icon {
                             transform: rotate(-45deg);
-                            color: $light-primary-color;
+                            color: $primary-color;
                         }
                     }
                 }
 
                 &__icon {
                     font-size: 18px;
-                    color: #ffb400;
+                    color: $light-primary-color;
                     transition: transform 0.3s ease, color 0.3s ease;
                 }
             }
@@ -159,7 +210,7 @@
             .model-service__content {
                 width: 100%;
                 margin: 0;
-                background-color: white;
+                background-color: $white;
                 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
                 padding: 0;
 
@@ -173,32 +224,33 @@
                         object-fit: cover;
                         object-position: center;
                         background-repeat: no-repeat;
-                        max-width: 100%;
+                        width: 100%;
                         border-radius: 12px;
                         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
                     }
                 }
 
                 .service-text {
-                    padding-top: 24px;
+                   padding: 24px 24px 0 24px;
 
                     .intro {
                         text-align: center;
                         font-size: 14px;
-                        font-weight: 400;
+                        font-weight: $fw-regular;
                         color: $black-500;
                         line-height: 1.5;
                         margin-bottom: 0;
+                        padding-bottom: 16px;
                     }
 
                     .features {
-                        padding: 1.5rem;
+                        padding-bottom: 16px;
                         border-radius: 12px;
 
                         h3 {
                             font-size: 1rem;
-                            font-weight: 600;
-                            color: #111;
+                            font-weight: $fw-semibold;
+                            color: $black;
                             text-align: center;
                             margin-bottom: 1rem;
                         }

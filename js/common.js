@@ -1,13 +1,12 @@
-// Sticky Header Slide + Shrink + Blur
-window.addEventListener("scroll", function () {
-  const header = document.querySelector(".sticky-on");
-
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-});
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.header-sticky').addClass('scrolle-header')
+    } else {
+      $('.header-sticky').removeClass('scrolle-header')
+    }
+  })
+})
 
 
 
@@ -74,33 +73,7 @@ filterTabs.forEach(tab => {
 $('.testimonial-carousel').owlCarousel({
   loop: true,
   margin: 10,
-  rtl:true,
-  responsiveClass: true,
-  items: 1,        // Number of items per slide
-  nav: false,
-  dot: true,
-  autoplay: true,  // Enable autoplay
-  autoplayTimeout: 3000, // Set autoplay interval
-  autoplayHoverPause: true, // Pause on hover
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 3,
-  
-    },
-    1000: {
-      items: 4,
-    }
-  }
-})
-
-// Resume skills slider
-$('.skills-carousel').owlCarousel({
-  loop: true,
-  margin: 10,
-  rtl:true,
+  rtl: true,
   responsiveClass: true,
   items: 1,        // Number of items per slide
   nav: false,
@@ -112,11 +85,44 @@ $('.skills-carousel').owlCarousel({
     0: {
       items: 1,
     },
-    600: {
-      items: 3,
-  
+    576: {
+      items: 2,
+
     },
-    1000: {
+     768: {
+      items: 3,
+
+    },
+    992: {
+      items: 4,
+    }
+  }
+})
+
+// Resume skills slider
+$('.skills-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  items: 1,     
+  nav: false,
+  dot: true,
+  autoplay: false,  // Enable autoplay
+  autoplayTimeout: 3000, // Set autoplay interval
+  autoplayHoverPause: false, // Pause on hover
+  responsive: {
+   0: {
+      items: 1,
+    },
+    576: {
+      items: 2,
+
+    },
+     768: {
+      items: 3,
+
+    },
+    992: {
       items: 4,
     }
   }

@@ -10,17 +10,32 @@
     z-index: 11;
     padding: 16px 0;
 
+
     h2 {
       font-size: 56px;
       font-weight: 900;
-      color: #272626;
+      color: $black-800;
       text-transform: uppercase;
       margin: 0;
       padding: 0;
       line-height: 1.5;
 
       span {
-        color: #ffb400;
+        color: $light-primary-color;
+      }
+
+      @include mac {
+        font-size: $heading-font;
+      }
+
+      @include tablet {
+        font-size: $xxl-title-font;
+
+      }
+
+      @include mobile {
+        font-size: $md-title-font;
+        line-height: 1.2;
       }
     }
 
@@ -35,12 +50,25 @@
       letter-spacing: 10px;
       line-height: 0.7;
       text-transform: uppercase;
-
-      color: #dee3e4; // ✔ cleaned (removed unnecessary rgba + !important)
-      opacity: 0.35; // ✔ added for transparency effect
-
+      color: $black-400;
+      opacity: 0.35;
       z-index: -1;
       pointer-events: none;
+
+      @include mac {
+        font-size: 92px;
+        letter-spacing: 6px;
+      }
+
+      @include tablet {
+        font-size: 68px;
+        letter-spacing: 4px;
+      }
+
+      @include mobile {
+        font-size: 36px;
+        letter-spacing: 2px;
+      }
     }
   }
 
@@ -51,6 +79,10 @@
       line-height: 1.5;
       color: #1E1F24;
       margin-bottom: 22px;
+
+      @include mobile {
+        font-size: 22px;
+      }
     }
 
     .background-container {
@@ -68,14 +100,18 @@
         white-space: nowrap;
         vertical-align: baseline;
         background-color: $light-primary-color;
-        padding: 8px;
         border: none;
         border-radius: 6px;
         font-size: 12px;
+        padding: 8px;
+        margin-bottom: 1rem;
         font-weight: 400;
         color: $white;
         margin-top: 0;
-        margin-bottom: 1rem;
+
+        @include mobile {
+          margin-bottom: 12px;
+        }
       }
 
       .box-title {
@@ -86,6 +122,10 @@
         margin-bottom: 8px;
         line-height: 1.2;
 
+        @include mobile {
+          font-size: 20px;
+        }
+
       }
 
       .box-sub-title {
@@ -93,27 +133,35 @@
         line-height: 1.8;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: $yellow-600;
+        color: $black;
         font-size: 16px;
+
+        @include mobile {
+          font-size: 14px;
+        }
       }
 
       .box-description {
         margin: o;
         line-height: 1.8;
-        color: $black-500;
+        color: $gray;
         font-size: 16px;
         font-weight: 400;
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
+
+        @include mobile {
+          font-size: 14px;
+        }
       }
     }
   }
 
   // resume skills slider
   .resume-skill__wrapper {
-    padding: 80px 20px;
+    padding: 32px 0px;
     margin: 0;
 
     .skill-title__box {
@@ -126,72 +174,142 @@
         margin-bottom: 10px;
         font-weight: 600;
 
-        .skill-subtitle {
-          text-align: center;
-          color: #6b7280;
-          margin-bottom: 50px;
-          font-size: 15px;
-          font-weight: 400;
+        @include tablet {
+          font-size: 32px;
+        }
+
+        @include mobile {
+          font-size: 24px;
+        }
+
+
+      }
+
+      .skill-subtitle {
+        text-align: center;
+        color: $gray;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+
+        @include mobile {
+          font-size: 14px;
         }
       }
     }
 
-    .skill-card {
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      text-align: center;
-      transition: transform 0.3s ease;
+    .skills-carousel {
+      .skill-card {
+        background: $black-300;
+        padding: 22px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: transform 0.3s ease;
 
-      &:hover {
-        transform: translateY(-8px);
+        &:hover {
+          transform: translateY(-8px);
+        }
+
+        .image-wrpper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        img {
+          width: 60px;
+          height: 100%;
+          background-repeat: no-repeat;
+          object-position: center;
+          object-fit: cover;
+
+          @include tablet {
+            width: 48px;
+          }
+
+          @include mobile {
+            width: 38px;
+          }
+        }
+
+        h4 {
+          font-size: 18px;
+          margin-bottom: 10px;
+          font-weight: 500;
+          color: #111;
+
+          @include tablet {
+            font-size: 16px;
+          }
+
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+
+        .progress {
+          width: 100%;
+          height: 8px;
+          background: $gray;
+          border-radius: 10px;
+          overflow: hidden;
+          direction: ltr;
+        }
+
+        .progress span {
+          display: block;
+          height: 100%;
+          background: linear-gradient(to right, #6366f1, #38BDF8);
+          border-radius: 10px;
+          transform-origin: left !important;
+        }
+
+
       }
 
-      .image-wrpper {
+      .owl-stage-outer {
+        padding: 32px 0;
+      }
+
+      .owl-dots {
+        width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        height: auto;
-        width: 100%;
-        margin-bottom: 15px;
+        align-items: center;
+
+        button.owl-dot {
+          background: transparent;
+          border: none;
+          padding: 0;
+          margin: 0 4px;
+
+          span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: $gray;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+          }
+          
+          &:hover span {
+            width: 22px;
+            border-radius: 10px;
+            background-color: $primary-color;
+          }
+
+          &.active span {
+            width: 22px;
+            border-radius: 10px;
+            background-color: $primary-color;
+          }
+        }
       }
-
-      img {
-        width: 60px;
-        height: 100%;
-        background-repeat: no-repeat;
-        object-position: center;
-        object-fit: cover;
-      }
-
-      h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        font-weight: 500;
-        color: #111;
-      }
-
-      .progress {
-        width: 100%;
-        height: 8px;
-        background: #e5e7eb;
-        border-radius: 10px;
-        overflow: hidden;
-        direction: ltr;
-      }
-
-      .progress span {
-        display: block;
-        height: 100%;
-        background: linear-gradient(to right, #6366f1, #4f46e5);
-        border-radius: 10px;
-        transform-origin: left !important;
-      }
-
-
     }
-
   }
 }
 

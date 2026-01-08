@@ -304,8 +304,13 @@ body {
   margin: 0;
 }
 .footer__section-wrapper .footer__section-top {
-  padding: 1rem 0;
+  padding: 16px 0px;
   background-color: #80828D;
+}
+@media (max-width: 576px) {
+  .footer__section-wrapper .footer__section-top {
+    padding: 12px 0;
+  }
 }
 .footer__section-wrapper .footer__section-top .top-wrapper {
   display: -webkit-box;
@@ -318,23 +323,35 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 576px) {
+  .footer__section-wrapper .footer__section-top .top-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-image {
-  display: block;
-  width: 190px;
-  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
   cursor: pointer;
-  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .footer__section-wrapper .footer__section-top .top-wrapper .footer-image {
+    display: none;
+  }
 }
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-image img {
-  max-height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  background-repeat: no-repeat;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  width: 190px;
+  height: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link {
   display: -webkit-box;
@@ -347,6 +364,18 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 576px) {
+  .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .follow-me {
   font-size: 1rem;
   font-weight: 500;
@@ -354,6 +383,10 @@ body {
   letter-spacing: 0.5px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+}
+.footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .follow-me:hover {
+  color: #38BDF8;
 }
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .social-media {
   display: -webkit-box;
@@ -375,7 +408,7 @@ body {
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .social-media .social-media_list .social-media_link {
   width: 42px;
   height: 42px;
-  background: #272626;
+  background: #343A40;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,17 +423,28 @@ body {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+@media (max-width: 576px) {
+  .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .social-media .social-media_list .social-media_link {
+    width: 38px;
+    height: 38px;
+  }
+}
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .social-media .social-media_list .social-media_link .media-icon {
   font-size: 1.2em;
-  color: white;
+  color: #fff;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+@media (max-width: 576px) {
+  .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .social-media .social-media_list .social-media_link .media-icon {
+    font-size: 1rem;
+  }
 }
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .social-media .social-media_list .social-media_link :hover .media-icon {
   color: #fff;
 }
 .footer__section-wrapper .footer__section-top .top-wrapper .footer-social-link .social-media .social-media_list :hover {
-  background: #ffb400;
+  background: #38BDF8;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }

@@ -13,14 +13,27 @@
         h2 {
             font-size: 56px;
             font-weight: 900;
-            color: #272626;
+            color: $black-800;
             text-transform: uppercase;
             margin: 0;
             padding: 0;
             line-height: 1.5;
 
             span {
-                color: #ffb400;
+                color: $light-primary-color;
+            }
+            @include mac{
+                font-size: $heading-font;
+            }
+
+            @include tablet {
+                font-size: $xxl-title-font;
+
+            }
+
+            @include mobile {
+                font-size: $md-title-font;
+                line-height: 1.2;
             }
         }
 
@@ -35,26 +48,44 @@
             letter-spacing: 10px;
             line-height: 0.7;
             text-transform: uppercase;
-            color: #dee3e4;
+            color: $black-400;
             opacity: 0.35;
             z-index: -1;
             pointer-events: none;
+
+            @include mac{
+                font-size: 92px;
+                letter-spacing: 6px;
+            }
+
+            @include tablet {
+                font-size: 68px;
+                letter-spacing: 4px;
+            }
+
+            @include mobile {
+                font-size: 36px;
+                letter-spacing: 2px;
+            }
         }
     }
 
     .testimonial-content p {
         font-size: 16px;
         font-weight: 400;
-        color: #111;
+        color: $gray;
         line-height: 1.2;
         text-align: center;
         padding: 32px 0;
         margin: 0;
+        @include mobile{
+            font-size: 15px;
+        }
     }
 
     .testimonial-col {
         padding: 60px 16px;
-        background: #fff;
+        background: $white;
         position: relative;
         margin: 50px 20px 20px 20px;
         box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
@@ -88,7 +119,10 @@
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 10px;
-            color: #111;
+            color: $black;
+            @include mobile{
+                font-size: 15px;
+            }
         }
 
         .review-content {
@@ -99,14 +133,17 @@
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            color: $black-500;
+            color: $gray;
+            @include mobile{
+                font-size: 13px;
+            }
         }
     }
 
     .owl-theme .owl-dots .owl-dot.active span,
     .owl-theme .owl-dots .owl-dot:hover span {
         width: 22px;
-        background-color: #ffb400;
+        background-color: $primary-color;
     }
 }
 

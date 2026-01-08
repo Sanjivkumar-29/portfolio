@@ -13,14 +13,28 @@
     h2 {
       font-size: 56px;
       font-weight: 900;
-      color: #272626;
+      color: $black-800;
       text-transform: uppercase;
       margin: 0;
       padding: 0;
       line-height: 1.5;
 
       span {
-        color: #ffb400;
+        color: $light-primary-color;
+      }
+
+      @include mac {
+        font-size: $heading-font;
+      }
+
+      @include tablet {
+        font-size: $xxl-title-font;
+
+      }
+
+      @include mobile {
+        font-size: $md-title-font;
+        line-height: 1.2;
       }
     }
 
@@ -35,12 +49,25 @@
       letter-spacing: 10px;
       line-height: 0.7;
       text-transform: uppercase;
-
-      color: #dee3e4; // ✔ cleaned (removed unnecessary rgba + !important)
-      opacity: 0.35; // ✔ added for transparency effect
-
+      color: $black-400;
+      opacity: 0.35;
       z-index: -1;
       pointer-events: none;
+
+      @include mac {
+        font-size: 92px;
+        letter-spacing: 6px;
+      }
+
+      @include tablet {
+        font-size: 68px;
+        letter-spacing: 4px;
+      }
+
+      @include mobile {
+        font-size: 36px;
+        letter-spacing: 2px;
+      }
     }
   }
 
@@ -52,6 +79,9 @@
       color: $black-800;
       position: relative;
       font-size: 18px;
+      @include mobile{
+        font-size: 16px;
+      }
 
       &::after {
         content: "";
@@ -70,7 +100,7 @@
 
       &::after {
         width: 100%;
-        background-color: #ffb400;
+        background-color: $light-primary-color;
       }
     }
   }
@@ -85,6 +115,12 @@
         font-size: $md-title-font;
         font-weight: $fw-medium;
         line-height: 1.5;
+        @include tablet{
+          font-size: $sm-title-font;
+        }
+        @include mobile{
+          font-size: $xs-title-font;
+        }
       }
 
       .about-description--wrapper {
@@ -92,6 +128,9 @@
         max-height: none;
         overflow: hidden;
         transition: height 0.6s cubic-bezier(0.44, 0.99, 0.48, 1);
+        @include mobile{
+          margin-bottom: 18px;
+        }
 
         .text-content {
           font-size: $base-font;
@@ -100,6 +139,9 @@
           transition: all 0.7s ease-in-out 0.3s;
           line-height: 1.6;
           margin-bottom: 0;
+          @include mobile{
+            font-size: 15px;
+          }
         }
       }
 
@@ -111,7 +153,7 @@
         border: none;
         outline: none;
         background-color: transparent;
-        color: #ffb400;
+        color: $light-primary-color;
         z-index: 1;
         display: flex;
         align-items: center;
@@ -134,7 +176,10 @@
         .icon-wrapper {
           font-size: 24px;
           display: flex;
-          color: #ffb400;
+          color: $light-primary-color;
+          @include mobile{
+            font-size: 20px;
+          }
         }
       }
     }
@@ -145,6 +190,12 @@
         font-weight: $fw-medium;
         line-height: 1.5;
         color: $black-800;
+          @include tablet{
+          font-size: $sm-title-font;
+        }
+        @include mobile{
+          font-size: $xs-title-font;
+        }
       }
 
       .info-list-wrapper {
@@ -160,16 +211,29 @@
           gap: 10px;
           font-size: 16px;
           color: $black-600;
+          @include mobile{
+            font-size: 15px;
+            padding-bottom: 18px;
+            gap: 8px;
+          }
 
           .info-title {
             text-transform: capitalize;
             opacity: 0.8;
             font-weight: 500;
+            font-size: 16px;
+            @include mobile{
+              font-size: 15px;
+            }
           }
 
           .info-con {
             font-weight: 600;
             display: block;
+            font-size: 18px;
+            @include mobile{
+              font-size: 16px;
+            }
 
           }
         }
